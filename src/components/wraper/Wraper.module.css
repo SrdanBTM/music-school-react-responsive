@@ -1,0 +1,17 @@
+
+
+.container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h3 {
+  display: inline-block;
+  font-size: var(--size-h3-title);
+  color: var(--color-font-dark);
+  border-bottom: var(--border-bottom);
+  padding: 0.15rem;
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,21 @@
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container a {
+  width: var(--size-social-icon);
+  height: var(--size-social-icon);
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}

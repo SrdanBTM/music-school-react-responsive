@@ -1,0 +1,18 @@
+
+
+.container {
+  display: flex;
+}
+
+.container img {
+  height: var( --size-header-logo-img);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.5rem;
+  color: var(--color-font-light);
+  font-size: var(--size-header-title);
+}

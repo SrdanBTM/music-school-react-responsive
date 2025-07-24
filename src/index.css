@@ -1,0 +1,95 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Itim', cursive;
+}
+
+button {
+  font-family: inherit;
+}
+
+:root {
+  /* COLOR */
+  --color-bg-menu: #333;
+  --color-bg-menu-hover: #000;
+  --color-font-light: #ddd;
+  --color-font-dark: #222;
+  --color-gold-1: #b8761a; 
+    /* 1 je upotrijebljen */
+  --color-gold-2: #b6823a;
+  --color-gold-3: #f2b55f;
+  --color-gold-4: #f9a632;
+  --color-gold-5: #f8ddb8;
+
+
+  /* SIZE */
+  --size-header-title: 1.1rem;
+  --size-header-logo-img: 3.5rem;
+  --size-mobile-menu-text: 1.1rem;
+  --size-first-page-heading: 2.7rem;
+  --size-first-page-text: 1.35rem;
+  --size-button-width: 16rem;
+  --size-button-height: 3.5rem;
+  --size-button-text: 1.3rem;
+  --size-h3-title: 1.5rem;
+  --size-h4-title-1: 1rem;
+  --size-h4-title-2: 1.3rem;
+  --size-footer-text: 1rem;
+  --size-section-image-width: 6rem;
+  --size-section-image-height: 6rem;
+  --size-footer-icon: 1rem;
+  --size-social-icon: 4rem;
+  --size-footer-width: 16rem;
+
+
+  /* BORDER */
+  --border-bottom: 0.18rem solid var(--color-gold-1);
+}
+
+.button {
+  width: var(--size-button-width);
+  height: var(--size-button-height);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: var(--size-button-text);
+  position: relative;
+  cursor: pointer;
+}
+
+.button::before, 
+.button::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.button::after {
+  right: 0;
+}
+
+.button::before {
+  left: 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: 0;
+  transition: width 0.3s ease-out;
+}
+
+
+.goldButton {
+  background-color: var(--color-gold-1);
+}
+
