@@ -22,7 +22,6 @@ const MainLayout = () => {
   let optionalLanguageData = data[languages.language2]
 
 
-
   return (
     <div>
       <Header

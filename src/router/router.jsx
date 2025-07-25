@@ -68,6 +68,10 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+],
+{
+  basename: '/music-school-react-responsive'
+}
+)
 
 export default router
