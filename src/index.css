@@ -22,8 +22,8 @@ button {
   --color-font-light: #ddd;
   --color-font-dark: #222;
   --color-gold-1: #b8761a; 
-    /* 1 je upotrijebljen */
   --color-gold-2: #b6823a;
+      /* 1 i 2 upotrijebljeni */
   --color-gold-3: #f2b55f;
   --color-gold-4: #f9a632;
   --color-gold-5: #f8ddb8;
@@ -47,6 +47,7 @@ button {
   --size-footer-icon: 1rem;
   --size-social-icon: 4rem;
   --size-footer-width: 16rem;
+  --size-any-question-height: 15rem;
 
 
   /* BORDER */
@@ -89,7 +90,11 @@ button {
 }
 
 
-.goldButton {
+.button-gold {
   background-color: var(--color-gold-1);
+}
+
+.button-gray {
+  background-color: var(--color-bg-menu);
 }
 

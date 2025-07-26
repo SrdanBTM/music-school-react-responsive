@@ -17,6 +17,8 @@ const MainLayout = () => {
 
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
 
+  const [isHomePage, setIsHomePage] = useState(true)
+
 
   let currentLanguageData = data[languages.language1]
   let optionalLanguageData = data[languages.language2]
@@ -38,11 +40,12 @@ const MainLayout = () => {
       />
 
       <Outlet
-        context={{currentLanguageData}}
+        context={{currentLanguageData, isHomePage}}
       />
 
       <Footer
         currentLanguageData={currentLanguageData}
+        isHomePage={isHomePage}
       />
 
     </div>

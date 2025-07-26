@@ -19,7 +19,7 @@ const FirstPage = () => {
 
         <p>{d.homeText}</p>
 
-        <button className='button goldButton'>{d.button.findOutMore}</button>
+        <button className='button button-gold'>{d.button.findOutMore}</button>
       </div>
 
     </div>
