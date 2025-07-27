@@ -10,4 +10,6 @@
   padding: 20px;
   position: fixed;
   z-index: 1;
+  background-position: top;
+  background-repeat: no-repeat;
 }
