@@ -40,7 +40,7 @@ const MainLayout = () => {
       />
 
       <Outlet
-        context={{currentLanguageData, isHomePage}}
+        context={{currentLanguageData, isHomePage, setIsHomePage}}
       />
 
       <Footer
