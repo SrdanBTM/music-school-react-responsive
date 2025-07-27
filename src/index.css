@@ -30,6 +30,7 @@ button {
 
 
   /* SIZE */
+  --size-header-height: 9rem;
   --size-header-title: 1.1rem;
   --size-header-logo-img: 3.5rem;
   --size-mobile-menu-text: 1.1rem;
@@ -98,3 +99,4 @@ button {
 .button-gray {
   background-color: var(--color-bg-menu);
 }
+
