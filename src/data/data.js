@@ -245,37 +245,43 @@ const data = {
               title: 'PIANO',
               dataId: 'piano',
               id: 'chooseYourSectionPiano',
-              image: 'images/instruments/piano.jpg'
+              image: 'images/instruments/piano.jpg',
+              alt: 'Piano section image'
           },
           guitar: {
               title: 'GUITAR',
               dataId: 'guitar',
               id: 'chooseYourSectionGuitar',
-              image: 'images/instruments/guitar.jpg'
+              image: 'images/instruments/guitar.jpg',
+              alt: 'Guitar section image'
           },
           violin: {
               title: 'VIOLIN',
               dataId: 'violin',
               id: 'chooseYourSectionViolin',
-              image: 'images/instruments/violin.jpg'
+              image: 'images/instruments/violin.jpg',
+              alt: 'Violin section image'
           },
           musicTheory: {
               title: 'MUSIC THEORY',
               dataId: 'theory',
               id: 'chooseYourSectionTheory',
-              image: 'images/instruments/theory.jpg'
+              image: 'images/instruments/theory.jpg',
+              alt: 'Music theory section image'
           },
           percussion: {
               title: 'PERCUSSION',
               dataId: 'percussion',
               id: 'chooseYourSectionPercussion',
-              image: 'images/instruments/percussion.jpg'
+              image: 'images/instruments/percussion.jpg',
+              alt: 'Percussion section image'
           },
           vocalTraining: {
               title: 'VOCAL TRAINING',
               dataId: 'vocal',
               id: 'chooseYourSectionVocal',
-              image: 'images/instruments/vocal.jpg'
+              image: 'images/instruments/vocal.jpg',
+              alt: 'Vocal training section image'
           }
       },
 
@@ -602,37 +608,43 @@ const data = {
               title: 'KLAVIER',
               dataId: 'piano',
               id: 'chooseYourSectionPiano',
-              image: 'images/instruments/piano.jpg'
+              image: 'images/instruments/piano.jpg',
+              alt: 'Klaviersektion-Bild'
           },
           guitar: {
               title: 'GITARRE',
               dataId: 'guitar',
               id: 'chooseYourSectionGuitar',
-              image: 'images/instruments/guitar.jpg'
+              image: 'images/instruments/guitar.jpg',
+              alt: 'Gitarresektion-Bild'              
           },
           violin: {
               title: 'VIOLINE',
               dataId: 'violin',
               id: 'chooseYourSectionViolin',
-              image: 'images/instruments/violin.jpg'
+              image: 'images/instruments/violin.jpg',
+              alt: 'Violinsektion-Bild'                 
           },
           musicTheory: {
               title: 'MUSIKTHEORIE',
               dataId: 'theory',
               id: 'chooseYourSectionTheory',
-              image: 'images/instruments/theory.jpg'
+              image: 'images/instruments/theory.jpg',
+              alt: 'Musiktheoriesektion-Bild'                  
           },
           percussion: {
               title: 'SCHLAGZEUG',
               dataId: 'percussion',
               id: 'chooseYourSectionPercussion',
-              image: 'images/instruments/percussion.jpg'
+              image: 'images/instruments/percussion.jpg',
+              alt: 'Schlagzeugsektion-Bild'   
           },
           vocalTraining: {
               title: 'GESANGSTRAINING',
               dataId: 'vocal',
               id: 'chooseYourSectionVocal',
-              image: 'images/instruments/vocal.jpg'
+              image: 'images/instruments/vocal.jpg',
+              alt: 'Gesangstrainingsektion-Bild'   
           }
       },
 
