@@ -41,7 +41,7 @@ const MainLayout = () => {
         isMobileMenuOpened={isMobileMenuOpened}
       />
 
-      <div className={!isHomePage && styles.outletContainer}>
+      <div className={!isHomePage ? styles.outletContainer : ''}>
         <Outlet
           context={{ currentLanguageData, isHomePage, setIsHomePage }}
         />
