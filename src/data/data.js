@@ -295,6 +295,7 @@ const data = {
               instructorName: 'Samantha King',
               instructorDescription: ', a professional pianist with extensive experience, teaches students of all levels.',
               image: 'images/instruments/piano.jpg',
+              alt: 'Piano section image',
               button: 'Join the Piano Section' 
           },
           guitar: {
@@ -306,6 +307,7 @@ const data = {
               instructorName: 'David Carter',
               instructorDescription: ', a skilled guitarist with a passion for teaching, uses a hands-on approach tailored for beginners.',
               image: 'images/instruments/guitar.jpg',
+              alt: 'Guitar section image',
               button: 'Join the Guitar Section'
           },
           violin: {
@@ -317,6 +319,7 @@ const data = {
               instructorName: 'Olivia Lewis',
               instructorDescription: ', an experienced violinist with international performance background, offers personalized guidance.',
               image: 'images/instruments/violin.jpg',
+              alt: 'Violin section image',
               button: 'Join the Violin Section'
           },
           musicTheory: {
@@ -328,6 +331,7 @@ const data = {
               instructorName: 'Michael Reed',
               instructorDescription: ', a seasoned music theory expert, provides in-depth instruction to support practical musicianship.',
               image: 'images/instruments/theory.jpg',
+              alt: 'Music theory section image',
               button: 'Join the Music Theory Section'
           },
           percussion: {
@@ -339,6 +343,7 @@ const data = {
               instructorName: 'Daniel Green',
               instructorDescription: ', an experienced percussionist and educator, helps students develop a strong rhythmic foundation.',
               image: 'images/instruments/percussion.jpg',
+              alt: 'Percussion section image',
               button: 'Join the Percussion Section'
           },
           vocalTraining: {
@@ -350,6 +355,7 @@ const data = {
               instructorName: 'Emily Clark',
               instructorDescription: ', a professional vocalist with extensive experience, expertly trains voices of all types and levels.',
               image: 'images/instruments/vocal.jpg',
+              alt: 'Vocal Training section image',
               button: 'Join the Vocal Training Section'
           }
       }
@@ -646,6 +652,7 @@ const data = {
               instructorName: 'Samantha King',
               instructorDescription: ', eine professionelle Pianistin mit umfangreicher Erfahrung, unterrichtet Schüler aller Niveaus.',
               image: 'images/instruments/piano.jpg',
+              alt: 'Klaviersektion-Bild',
               button: 'Zur Klaviersektion beitreten'
           },
           guitar: {
@@ -657,6 +664,7 @@ const data = {
               instructorName: 'David Carter',
               instructorDescription: ', ein talentierter Gitarrist mit einer Leidenschaft fürs Unterrichten, verwendet einen praxisorientierten Ansatz speziell für Anfänger.',
               image: 'images/instruments/guitar.jpg',
+              alt: 'Gitarrensektion-Bild',
               button: 'Zur Gitarrensektion beitreten'
           },
           violin: {
@@ -668,6 +676,7 @@ const data = {
               instructorName: 'Olivia Lewis',
               instructorDescription: ', eine erfahrene Violinistin mit internationaler Bühnenerfahrung, bietet personalisierte Anleitung.',
               image: 'images/instruments/violin.jpg',
+              alt: 'Violinensektion-Bild',
               button: 'Zur Violinensektion beitreten'
           },
           musicTheory: {
@@ -679,6 +688,7 @@ const data = {
               instructorName: 'Michael Reed',
               instructorDescription: ', ein erfahrener Musiktheorie-Experte, bietet fundierten Unterricht zur Unterstützung der praktischen Musikausbildung.',
               image: 'images/instruments/theory.jpg',
+              alt: 'Musiktheorie-Sektion-Bild',
               button: 'Zur Musiktheorie-Sektion beitreten'
           },
           percussion: {
@@ -690,6 +700,7 @@ const data = {
               instructorName: 'Daniel Green',
               instructorDescription: ', ein erfahrener Schlagzeuger und Pädagoge, hilft den Schülern, ein starkes Rhythmusfundament zu entwickeln.',
               image: 'images/instruments/percussion.jpg',
+              alt: 'Schlagzeugsektion-Bild',
               button: 'Zur Schlagzeugsektion beitreten'
           },
           vocalTraining: {
@@ -701,6 +712,7 @@ const data = {
               instructorName: 'Emily Clark',
               instructorDescription: ', eine professionelle Sängerin mit umfassender Erfahrung, bietet exzellentes Training für Stimmen aller Arten und Niveaus.',
               image: 'images/instruments/vocal.jpg',
+              alt: 'Gesangsausbildungssektion-Bild',
               button: 'Zur Gesangsausbildungssektion beitreten'
           }
       }
