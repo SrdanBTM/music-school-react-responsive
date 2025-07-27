@@ -109,7 +109,7 @@ const data = {
 
       button: {
           findOutMore: 'Find Out More',
-          contact: 'Contact',
+          contact: 'Contact Us',
           send: 'Send Message',
           sendMessage: 'Send Message',
           errorValueMissing: 'Please fill out all required fields.',
@@ -462,7 +462,7 @@ const data = {
 
       button: {
           findOutMore: 'Mehr erfahren',
-          contact: 'Kontakt',
+          contact: 'Kontaktieren Sie uns',
           send: 'Nachricht senden',
           sendMessage: 'Nachricht senden',
           errorValueMissing: 'Bitte füllen Sie alle erforderlichen Felder aus.',
