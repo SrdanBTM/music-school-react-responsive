@@ -4,7 +4,7 @@ import { useOutletContext } from 'react-router-dom'
 import { useEffect } from 'react'
 
 const SectionsLayout = () => {
-  const { setIsHomePage } = useOutletContext()
+  const { setIsHomePage, currentLanguageData } = useOutletContext()
 
   useEffect(() => {
     setIsHomePage(false)
@@ -13,7 +13,7 @@ const SectionsLayout = () => {
 
   return (
     <div>
-      <Outlet />
+      <Outlet context={{currentLanguageData}} />
     </div>
   )
 }
