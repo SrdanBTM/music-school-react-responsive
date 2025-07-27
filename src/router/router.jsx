@@ -3,6 +3,7 @@ import { createHashRouter } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout.jsx'
 import HomePage from '../pages/HomePage.jsx'
 import SectionsLayout from '../layouts/SectionsLayout.jsx'
+import ChooseSection from '../components/choose-section/ChooseSection.jsx'
 
 const router = createHashRouter([
   {
@@ -16,10 +17,10 @@ const router = createHashRouter([
       {
         path: 'sections',
         element: <SectionsLayout />,
-        shildren: [
+        children: [
           {
             path: '',
-            element: 'CHOOSE SECTION PAGE'
+            element: <ChooseSection />
           },
           {
             path: 'one-section',
