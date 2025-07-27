@@ -13,4 +13,28 @@
 .content {
   width: 45rem;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content p {
+  color: var(--color-font-light);
+  font-family: "Italianno", cursive;
+  font-size: var(--size-rotating-sentences-text);
+}
+
+.startPosition {
+  transform: translateX(500px);
+  transition: none;
+}
+
+.middlePosition {
+  transform: translateX(0);
+  transition: transform 1.2s ease-out;
+}
+
+.endPosition {
+  transform: translateX(-500px);
+  transition: transform 1.2s ease-in;
 }
