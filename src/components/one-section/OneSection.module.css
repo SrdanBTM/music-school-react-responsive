@@ -1,0 +1,16 @@
+
+
+.oneSectionContainer h4 {
+  margin-bottom: 0.5rem;
+  font-size: var(--size-one-section-title);
+}
+
+.oneSectionContainer p {
+  margin-bottom: 2.5rem;
+  font-size: var(--size-one-section-text);
+}
+
+.oneSectionContainer img {
+  width: 100%;
+  margin-top: 2rem;
+}
