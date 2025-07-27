@@ -4,16 +4,17 @@ import styles from './ChooseSection.module.css'
 import Wraper from '../wraper/Wraper.jsx'
 
 const ChooseSection = () => {
-  const { currentLanguageData } = useOutletContext()
+  const { currentLanguageData, setSection } = useOutletContext()
   const d = currentLanguageData
   const keys = Object.keys(d.chooseYourSection)
+
 
   return (
     <Wraper title={d.titles.chooseYourSection}>
       <div className={styles.container}>
         {keys.map(key => {
           return (
-            <Link key={key} className={styles.section}>
+            <Link onClick={() => setSection(key)} to='/sections/one-section' key={key} className={styles.section}>
               <img
                 src={`${import.meta.env.BASE_URL}${d.chooseYourSection[key].image}`}
                 alt="section image" />
