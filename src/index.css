@@ -48,6 +48,7 @@ button {
   --size-social-icon: 4rem;
   --size-footer-width: 16rem;
   --size-any-question-height: 15rem;
+  --size-rotating-sentences-text: 2.1rem;
 
 
   /* BORDER */
@@ -98,3 +99,17 @@ button {
   background-color: var(--color-bg-menu);
 }
 
+.startPosition {
+  transform: translateX(300px);
+  transition: none;
+}
+
+.middlePosition {
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
+
+.endPosition {
+  transform: translateX(-300px);
+  transition: transform 0.5s ease-in;
+}
