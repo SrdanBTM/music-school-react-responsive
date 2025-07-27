@@ -17,7 +17,7 @@ const ChooseSection = () => {
             <Link onClick={() => setSection(key)} to='/sections/one-section' key={key} className={styles.section}>
               <img
                 src={`${import.meta.env.BASE_URL}${d.chooseYourSection[key].image}`}
-                alt="section image" />
+                alt={d.chooseYourSection[key].alt} />
               <h4>{d.chooseYourSection[key].title}</h4>
             </Link>
           )
