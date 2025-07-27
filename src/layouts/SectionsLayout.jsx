@@ -1,12 +1,10 @@
 
 import { Outlet } from 'react-router-dom'
 import { useOutletContext } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 const SectionsLayout = () => {
-  const { setIsHomePage, currentLanguageData } = useOutletContext()
-
-  const [section, setSection] = useState(null)
+  const { setIsHomePage, currentLanguageData, section, setSection } = useOutletContext()
 
   useEffect(() => {
     setIsHomePage(false)
