@@ -98,18 +98,3 @@ button {
 .button-gray {
   background-color: var(--color-bg-menu);
 }
-
-.startPosition {
-  transform: translateX(300px);
-  transition: none;
-}
-
-.middlePosition {
-  transform: translateX(0);
-  transition: transform 0.5s ease-out;
-}
-
-.endPosition {
-  transform: translateX(-300px);
-  transition: transform 0.5s ease-in;
-}
