@@ -1,6 +1,7 @@
 
 import { Outlet } from 'react-router-dom'
 import { useState } from 'react'
+import styles from './MainLayout.module.css'
 
 import Header from '../components/header/Header.jsx'
 import Footer from '../components/footer/Footer.jsx'
@@ -30,6 +31,7 @@ const MainLayout = () => {
         currentLanguageData={currentLanguageData}
         isMobileMenuOpened={isMobileMenuOpened}
         setIsMobileMenuOpened={setIsMobileMenuOpened}
+        isHomePage={isHomePage}
       />
 
       <MobileMenu
@@ -39,9 +41,11 @@ const MainLayout = () => {
         isMobileMenuOpened={isMobileMenuOpened}
       />
 
-      <Outlet
-        context={{currentLanguageData, isHomePage, setIsHomePage}}
-      />
+      <div className={!isHomePage && styles.outletContainer}>
+        <Outlet
+          context={{ currentLanguageData, isHomePage, setIsHomePage }}
+        />
+      </div>
 
       <Footer
         currentLanguageData={currentLanguageData}
