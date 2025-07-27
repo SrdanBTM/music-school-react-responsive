@@ -7,7 +7,7 @@ const Header = ({ currentLanguageData, isMobileMenuOpened, setIsMobileMenuOpened
 
   return (
     <div
-      className={styles.container}
+      className={`${styles.container} ${!isHomePage && styles.cover}`}
       style={{backgroundImage: !isHomePage ? `url(${import.meta.env.BASE_URL}images/background/bg1.jpg)` : ''}}>
       <Logo
         currentLanguageData={currentLanguageData} />
