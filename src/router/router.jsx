@@ -2,6 +2,7 @@
 import { createHashRouter } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout.jsx'
 import HomePage from '../pages/HomePage.jsx'
+import SectionsLayout from '../layouts/SectionsLayout.jsx'
 
 const router = createHashRouter([
   {
@@ -14,7 +15,7 @@ const router = createHashRouter([
       },
       {
         path: 'sections',
-        element: 'SECTIONS LAYOUT',
+        element: <SectionsLayout />,
         shildren: [
           {
             path: '',
