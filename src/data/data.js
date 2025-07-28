@@ -153,6 +153,7 @@ const data = {
 
 
       titles: {
+          chooseAnotherSection: 'Choose Another Section',
           chooseYourSection: 'Choose Your Section',
           aboutTheSchool: 'About the School',
           ourTeam: 'Our Team',
@@ -515,6 +516,7 @@ const data = {
       },
 
       titles: {
+          chooseAnotherSection: 'Andere Sektion wählen',
           chooseYourSection: 'Wählen Sie Ihre Sektion',
           aboutTheSchool: 'Über die Schule',
           ourTeam: 'Unser Team',
