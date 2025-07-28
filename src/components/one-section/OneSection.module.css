@@ -20,7 +20,7 @@
 .allAnotherSectionsContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .section {
@@ -35,8 +35,8 @@
 }
 
 .section img {
-  width: var(--size-section-image-width);
-  height: var(--size-section-image-height);
+  width: calc(var(--size-section-image-width) * 0.8);
+  height: calc(var(--size-section-image-height) * 0.8);
   border-radius: 50%;
   box-shadow: 0 0 8px #555;
   margin-bottom: 0.7rem;
