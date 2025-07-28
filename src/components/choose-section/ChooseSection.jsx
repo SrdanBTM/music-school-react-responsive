@@ -2,24 +2,25 @@
 import { useOutletContext, Link } from 'react-router-dom'
 import styles from './ChooseSection.module.css'
 import Wraper from '../wraper/Wraper.jsx'
+import ChooseSectionLink from '../choose-section-link/ChooseSectionLink.jsx'
 
 const ChooseSection = () => {
   const { currentLanguageData, setSection } = useOutletContext()
+  const keys = Object.keys(currentLanguageData.chooseYourSection)
   const d = currentLanguageData
-  const keys = Object.keys(d.chooseYourSection)
-
 
   return (
     <Wraper title={d.titles.chooseYourSection}>
       <div className={styles.container}>
         {keys.map(key => {
           return (
-            <Link onClick={() => setSection(key)} to='/sections/one-section' key={key} className={styles.section}>
-              <img
-                src={`${import.meta.env.BASE_URL}${d.chooseYourSection[key].image}`}
-                alt={d.chooseYourSection[key].alt} />
-              <h4>{d.chooseYourSection[key].title}</h4>
-            </Link>
+            <ChooseSectionLink
+              key={key}
+              className={styles.section}
+              currentLanguageData={currentLanguageData}
+              setSection={setSection}
+              sectionKey={key}
+            />
           )
         })}
       </div>
