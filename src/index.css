@@ -17,6 +17,7 @@ button {
 
 :root {
   /* COLOR */
+  --color-bg: #e6e1d3;
   --color-bg-menu: #333;
   --color-bg-menu-hover: #000;
   --color-font-light: #ddd;
