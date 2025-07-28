@@ -2,4 +2,47 @@
 
 .container {
   width: 100%;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: 1fr;
 }
+
+.instructor {
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px #ccc;
+  padding: 0.5rem;
+  background-color: transparent;
+  display: flex;
+  justify-content:space-around;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.instructor:hover {
+  transform: scale(1.05);
+}
+
+.instructor img {
+  width: var(--size-instructor-photo);
+}
+
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h4:first-child {
+  font-size: var(--size-h4-title-2);
+  font-weight: normal;
+  color: var(--color-gold-1); 
+}
+
+.title h4:last-child {
+  font-size: calc(var(--size-h4-title-2)*0.9);
+  color: var(--color-dark); 
+  font-weight: normal;
+}
+
