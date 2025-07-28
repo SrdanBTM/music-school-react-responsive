@@ -13,7 +13,7 @@
   padding: 0.5rem;
   background-color: transparent;
   display: flex;
-  justify-content:space-around;
+  flex-direction: column;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -22,7 +22,13 @@
   transform: scale(1.05);
 }
 
-.instructor img {
+.imageAndTitle {
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+}
+
+.imageAndTitle img {
   width: var(--size-instructor-photo);
 }
 
@@ -44,5 +50,18 @@
   font-size: calc(var(--size-h4-title-2)*0.9);
   color: var(--color-dark); 
   font-weight: normal;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.info h4 {
+  margin: 1rem 0;
+  font-size: var(--size-h4-title-1);
+}
+
+.info p {
+  font-size: var(--size-footer-text);
 }
 
