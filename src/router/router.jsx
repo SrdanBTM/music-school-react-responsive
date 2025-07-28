@@ -7,6 +7,7 @@ import ChooseSection from '../components/choose-section/ChooseSection.jsx'
 import OneSection from '../components/one-section/OneSection.jsx'
 import AboutUsLayout from '../layouts/AboutUsLayout.jsx'
 import AboutSchool from '../components/about-school/AboutSchool.jsx'
+import OurTeam from '../components/our-team/OurTeam.jsx'
 
 const router = createHashRouter([
   {
@@ -37,7 +38,13 @@ const router = createHashRouter([
         children: [
           {
             path: '',
-            element: <AboutSchool />
+            element: (
+              <>
+                <AboutSchool />
+                <OurTeam />
+              </>
+            )
+
           },
           {
             path: 'about-school',
