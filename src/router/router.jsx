@@ -24,7 +24,7 @@ const router = createHashRouter([
             element: <ChooseSection />
           },
           {
-            path: 'one-section',
+            path: ':id',
             element: <OneSection />
           }
         ]

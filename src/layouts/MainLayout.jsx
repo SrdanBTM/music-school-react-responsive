@@ -20,8 +20,6 @@ const MainLayout = () => {
 
   const [isHomePage, setIsHomePage] = useState(true)
 
-  const [section, setSection] = useState(null)
-
 
 
   let currentLanguageData = data[languages.language1]
@@ -46,7 +44,7 @@ const MainLayout = () => {
 
       <div className={!isHomePage ? styles.outletContainer : ''}>
         <Outlet
-          context={{ currentLanguageData, isHomePage, setIsHomePage, section, setSection }}
+          context={{ currentLanguageData, isHomePage, setIsHomePage }}
         />
       </div>
 
