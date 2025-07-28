@@ -14,16 +14,26 @@ const OurTeam = () => {
 
   const instructorKeysArray = instructorKeys.map(key => [key, false])
   const instructorKeysObject = Object.fromEntries(instructorKeysArray)
-  const [isInstructorOpened, setIsInstructorOpened] = useState(instructorKeysObject)
+  const [showInfoState, setShowInfoState] = useState(instructorKeysObject)
+
+  const handleClick = (key)=> {
+    setShowInfoState(prev => {
+      return {
+        ...prev,
+        [key]: !prev[key]
+      }
+    })
+  }
+
 
   return (
     <Wraper title={d.titles.ourTeam}>
       <div className={styles.container}>
         {instructorKeys.map(key => {
           return (
-            <div key={key} className={styles.instructor}>
+            <div onClick={()=>handleClick(key)} key={key} className={styles.instructor}>
               <div className={styles.imageAndTitle}>
-                <img
+                <img className={showInfoState[key] ? styles.bigImage : styles.smallImage}
                   src={`${import.meta.env.BASE_URL}${d.ourTeam[key].img}`}
                   alt={`${d.ourTeam[key].name} photo`} />
 
@@ -33,7 +43,7 @@ const OurTeam = () => {
                 </div>
               </div>
 
-              <div className={styles.info}>
+              <div className={`${styles.info} ${showInfoState[key] ? styles.showInfo : styles.hideInfo}`}>
                 <h4>{d.ourTeam[key].basicInfo}</h4>
                 <p>{d.ourTeam[key].about}</p>
               </div>

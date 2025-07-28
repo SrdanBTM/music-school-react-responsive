@@ -14,6 +14,7 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -26,10 +27,6 @@
   width: 100%;
   display: flex;
   justify-content:space-around;
-}
-
-.imageAndTitle img {
-  width: var(--size-instructor-photo);
 }
 
 .title {
@@ -52,12 +49,9 @@
   font-weight: normal;
 }
 
-.info {
-  padding: 1rem;
-}
-
 .info h4 {
-  margin: 1rem 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: calc(var(--size-h4-title-2) * 0.8);
 }
 
@@ -65,3 +59,26 @@
   font-size: var(--size-footer-text);
 }
 
+.showInfo {
+  opacity: 1;
+  max-height: 20rem;
+  transition: max-height 0.3s ease, opacity 0.5s ease 0.2s;
+  pointer-events: auto;
+}
+
+.hideInfo {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.2s ease, opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.smallImage {
+  width: var(--size-instructor-photo);
+  transition: width 0.3s ease;
+}
+
+.bigImage {
+  width: calc(var(--size-instructor-photo) * 1.5);
+  transition: width 0.3s ease;
+}
