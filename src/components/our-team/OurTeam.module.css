@@ -47,7 +47,7 @@
 }
 
 .title h4:last-child {
-  font-size: var(--size-h4-title-1);
+  font-size: calc(var(--size-h4-title-2)*0.9);
   color: var(--color-dark); 
   font-weight: normal;
 }
@@ -58,7 +58,7 @@
 
 .info h4 {
   margin: 1rem 0;
-  font-size: calc(var(--size-h4-title-2) * 0.9);
+  font-size: calc(var(--size-h4-title-2) * 0.8);
 }
 
 .info p {
