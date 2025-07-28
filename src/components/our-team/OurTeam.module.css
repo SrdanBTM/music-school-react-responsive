@@ -10,7 +10,7 @@
 .instructor {
   border: 1px solid #fff;
   box-shadow: 0 0 8px #ccc;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
 
 .info h4 {
   margin: 1rem 0;
-  font-size: var(--size-h4-title-1);
+  font-size: calc(var(--size-h4-title-2) * 0.9);
 }
 
 .info p {
