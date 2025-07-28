@@ -2,11 +2,15 @@
 import styles from './OneSection.module.css'
 import Wraper from '../wraper/Wraper.jsx'
 import { useOutletContext } from 'react-router-dom'
+import ChooseSectionLink from '../choose-section-link/ChooseSectionLink.jsx'
 
 const OneSection = () => {
 
   const { currentLanguageData, section, setSection } = useOutletContext()
   const d = currentLanguageData
+
+  const allSectionKeys = Object.keys(d.chooseYourSection)
+  const allAnotherSectionsKeys = allSectionKeys.filter(key => key != section)
 
 
   return (
@@ -27,13 +31,22 @@ const OneSection = () => {
               <img
                 src={`${import.meta.env.BASE_URL}${d.sections[section].image}`}
                 alt={d.sections[section].alt} />
-                
+
             </div>
           </Wraper>
 
-          <Wraper title={d.titles.chooseYourSection}>
-            <div className={styles.allSectionsContainer}>
-              <div>All sections</div>
+          <Wraper title={d.titles.chooseAnotherSection}>
+            <div className={styles.allAnotherSectionsContainer}>
+              {allAnotherSectionsKeys.map(key => {
+                return (
+                  <ChooseSectionLink
+                    key={key}
+                    className={styles.section}
+                    setSection={setSection}
+                    sectionKey={key}
+                    currentLanguageData={currentLanguageData} />
+                )
+              })}
             </div>
           </Wraper>
         </div>
