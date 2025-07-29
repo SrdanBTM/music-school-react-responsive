@@ -8,6 +8,7 @@ import OneSection from '../components/one-section/OneSection.jsx'
 import AboutUsLayout from '../layouts/AboutUsLayout.jsx'
 import AboutSchool from '../components/about-school/AboutSchool.jsx'
 import OurTeam from '../components/our-team/OurTeam.jsx'
+import ContactLayout from '../layouts/ContactLayout.jsx'
 
 const router = createHashRouter([
   {
@@ -58,7 +59,7 @@ const router = createHashRouter([
       },
       {
         path: 'contact',
-        element: 'CONTACT LAYOUT',
+        element: <ContactLayout />,
         children: [
           {
             path: '',
