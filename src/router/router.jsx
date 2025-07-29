@@ -10,6 +10,7 @@ import AboutSchool from '../components/about-school/AboutSchool.jsx'
 import OurTeam from '../components/our-team/OurTeam.jsx'
 import ContactLayout from '../layouts/ContactLayout.jsx'
 import ContactUs from '../components/contact-us/ContactUs.jsx'
+import SendMessage from '../components/send-message/SendMessage.jsx'
 
 const router = createHashRouter([
   {
@@ -67,6 +68,7 @@ const router = createHashRouter([
             element: (
               <>
                 <ContactUs />
+                <SendMessage />
               </>
             )
           },
