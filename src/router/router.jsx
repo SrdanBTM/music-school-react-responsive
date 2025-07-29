@@ -9,6 +9,7 @@ import AboutUsLayout from '../layouts/AboutUsLayout.jsx'
 import AboutSchool from '../components/about-school/AboutSchool.jsx'
 import OurTeam from '../components/our-team/OurTeam.jsx'
 import ContactLayout from '../layouts/ContactLayout.jsx'
+import ContactUs from '../components/contact-us/ContactUs.jsx'
 
 const router = createHashRouter([
   {
@@ -63,7 +64,11 @@ const router = createHashRouter([
         children: [
           {
             path: '',
-            element: 'CONTACT US PAGE, SEND MESSAGE PAGE , FIND US PAGE'
+            element: (
+              <>
+                <ContactUs />
+              </>
+            )
           },
           {
             path: 'contact-us',
