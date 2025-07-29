@@ -1,0 +1,21 @@
+
+.container {
+  width: 100%;
+}
+
+.container input,
+.container textarea {
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: calc(var(--size-footer-text)*1.2);
+  color: var(--color-font-dark);
+  margin-bottom: 2rem;
+  font-family: inherit;
+}
+
+.container button {
+  width: 100%;
+  margin-top: 1rem;
+}
