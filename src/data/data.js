@@ -86,16 +86,17 @@ const data = {
           map: {
               title: '123 Music Avenue, Your City',
               image: 'images/icons/map-icon-gold.png',
-              href: 'https://www.google.com/maps?q=40.785091,-73.968285" target="_blank'
+              href: 'https://www.google.com/maps?q=40.785091,-73.968285'
           },
           phone: {
               title: '+12 (0) 34 567-8989',
-              image: 'images/icons/phone-icon-gold.png'
+              image: 'images/icons/phone-icon-gold.png',
+              href: 'tel:+12345678989'
           },
           email: {
               title: 'info@harmonymusicschool.com',
               image: 'images/icons/email-icon-gold.png',
-              href: 'mailto:email@example.com" target="_blank',
+              href: 'mailto:email@example.com',
           },
       },
 
@@ -447,21 +448,21 @@ const data = {
           'Musik ist eine Sprache, die jeder lernen kann.',
           'Deine musikalische Reise beginnt hier!'
       ],
-
       contactDetails: {
           map: {
               title: '123 Musikallee, Ihre Stadt',
               image: 'images/icons/map-icon-gold.png',
-              href: 'https://www.google.com/maps?q=40.785091,-73.968285" target="_blank'
+              href: 'https://www.google.com/maps?q=40.785091,-73.968285'
           },
           phone: {
               title: '+12 (0) 34 567-8989',
-              image: 'images/icons/phone-icon-gold.png'
+              image: 'images/icons/phone-icon-gold.png',
+              href: 'tel:+12345678989'
           },
           email: {
               title: 'info@harmonymusicschool.com',
               image: 'images/icons/email-icon-gold.png',
-              href: 'mailto:email@example.com" target="_blank',
+              href: 'mailto:email@example.com',
           }
       },
 
