@@ -11,6 +11,7 @@ import OurTeam from '../components/our-team/OurTeam.jsx'
 import ContactLayout from '../layouts/ContactLayout.jsx'
 import ContactUs from '../components/contact-us/ContactUs.jsx'
 import SendMessage from '../components/send-message/SendMessage.jsx'
+import FindUs from '../components/find-us/FindUs.jsx'
 
 const router = createHashRouter([
   {
@@ -69,6 +70,7 @@ const router = createHashRouter([
               <>
                 <ContactUs />
                 <SendMessage />
+                <FindUs />
               </>
             )
           },
