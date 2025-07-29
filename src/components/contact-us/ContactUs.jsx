@@ -15,7 +15,11 @@ const ContactUs = () => {
       <div className={styles.container}>
         {contactDetailsKeys.map(key => {
           return (
-            <a href={d.contactDetails[key].href} key={key}>
+            <a 
+            href={d.contactDetails[key].href} 
+            target={d.contactDetails[key].target} 
+            rel={d.contactDetails[key].rel} 
+            key={key}>
               <img src={`${import.meta.env.BASE_URL}${d.contactDetails[key].image}`} alt="icon" />
               <p>{d.contactDetails[key].title}</p>
             </a>
