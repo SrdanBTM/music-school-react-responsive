@@ -15,7 +15,13 @@
   font-family: inherit;
 }
 
+.container input:focus,
+.container textarea:focus {
+  outline: 1px solid #aaa;
+}
+
 .container button {
   width: 100%;
   margin-top: 1rem;
 }
+
