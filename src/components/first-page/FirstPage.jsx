@@ -1,6 +1,6 @@
 
 import styles from './FirstPage.module.css'
-import { useOutletContext } from 'react-router-dom'
+import { useOutletContext, Link } from 'react-router-dom'
 
 const FirstPage = () => {
   const { currentLanguageData } = useOutletContext()
@@ -19,7 +19,7 @@ const FirstPage = () => {
 
         <p>{d.homeText}</p>
 
-        <button className='button button-gold'>{d.button.findOutMore}</button>
+        <Link to='/about-us' className='button button-gold'>{d.button.findOutMore}</Link>
       </div>
 
     </div>
