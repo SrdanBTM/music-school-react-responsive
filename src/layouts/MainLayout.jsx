@@ -40,6 +40,7 @@ const MainLayout = () => {
         optionalLanguageData={optionalLanguageData}
         setLanguages={setLanguages}
         isMobileMenuOpened={isMobileMenuOpened}
+        setIsMobileMenuOpened={setIsMobileMenuOpened}
       />
 
       <div className={!isHomePage ? styles.outletContainer : ''}>
