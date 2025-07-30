@@ -2,7 +2,7 @@
 import styles from './MobileMenu.module.css'
 import { NavLink } from 'react-router-dom'
 
-const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, isMobileMenuOpened }) => {
+const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, isMobileMenuOpened, setIsMobileMenuOpened }) => {
 
   const home = currentLanguageData.nav.main.home
   const sections = currentLanguageData.nav.main.sections
@@ -12,8 +12,14 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
   const en = { language1: 'en', language2: 'de' }
   const de = { language1: 'de', language2: 'en' }
 
-  const handleClick = () => {
+  
+  const handleButtonClick = () => {
     setLanguages(prev => prev.language1 === 'en' ? de : en)
+    setIsMobileMenuOpened(false)
+  }
+
+  const handleNavLinkClick = ()=> {
+    setIsMobileMenuOpened(false)
   }
 
 
@@ -22,24 +28,24 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
       <nav>
         <ul>
           <li>
-            <NavLink to='/'>{home}</NavLink>
+            <NavLink onClick={handleNavLinkClick} to='/'>{home}</NavLink>
           </li>
 
           <li>
-            <NavLink to='/sections'>{sections}</NavLink>
+            <NavLink onClick={handleNavLinkClick} to='/sections'>{sections}</NavLink>
           </li>
 
           <li>
-            <NavLink to='/about-us'>{aboutUs}</NavLink>
+            <NavLink onClick={handleNavLinkClick} to='/about-us'>{aboutUs}</NavLink>
           </li>
 
           <li>
-            <NavLink to='/contact'>{contact}</NavLink>
+            <NavLink onClick={handleNavLinkClick} to='/contact'>{contact}</NavLink>
           </li>
         </ul>
       </nav>
 
-      <button onClick={handleClick}>{optionalLanguageData.nav.main.language}</button>
+      <button onClick={handleButtonClick}>{optionalLanguageData.nav.main.language}</button>
     </div>
   )
 }
