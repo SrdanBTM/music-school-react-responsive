@@ -80,7 +80,7 @@ const router = createHashRouter([
           },
           {
             path: 'send-message',
-            element: 'SEND MESSAGE PAGE'
+            element: <SendMessage />
           },
           {
             path: 'find-us',
