@@ -14,7 +14,7 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
     setIsMobileMenuOpened(false)
   }
 
-  const handleNavLinkClick = ()=> {
+  const handleNavLinkClick = () => {
     setIsMobileMenuOpened(false)
   }
 
@@ -23,19 +23,52 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
       <nav>
         <ul>
           <li>
-            <NavLink onClick={handleNavLinkClick} to='/'>{d.nav.main.home}</NavLink>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/'>{d.nav.main.home}
+            </NavLink>
           </li>
 
           <li>
-            <NavLink onClick={handleNavLinkClick} to='/sections'>{d.nav.main.sections}</NavLink>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/sections'>{d.nav.main.sections}
+            </NavLink>
           </li>
 
           <li>
-            <NavLink onClick={handleNavLinkClick} to='/about-us'>{d.nav.main.aboutUs}</NavLink>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/about-us/about-school'>{d.nav.aboutUs.aboutTheSchool.title}
+            </NavLink>
           </li>
 
           <li>
-            <NavLink onClick={handleNavLinkClick} to='/contact'>{d.nav.main.contact}</NavLink>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/about-us/our-team'>{d.nav.aboutUs.ourTeam.title}
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/contact/contact-us'>{d.nav.contact.contactDetails.title}
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/contact/send-message'>{d.nav.contact.sendMessage.title}
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              onClick={handleNavLinkClick}
+              to='/contact/find-us'>{d.nav.contact.findUs.title}
+            </NavLink>
           </li>
         </ul>
       </nav>
