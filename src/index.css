@@ -71,6 +71,11 @@ button {
   font-size: var(--size-button-text);
   position: relative;
   cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button::before, 
