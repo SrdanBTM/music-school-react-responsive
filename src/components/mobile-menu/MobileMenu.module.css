@@ -4,7 +4,7 @@
   width: 100%;
   height: 100%;
   background-color: var(--color-bg-menu);
-  margin-top: 140px;
+  margin-top: var(--size-header-height);
   z-index: 1;
 }
 
