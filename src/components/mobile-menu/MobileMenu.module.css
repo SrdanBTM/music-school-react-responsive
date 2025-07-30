@@ -16,7 +16,7 @@
 
 .container li a {
   display: block;
-  padding: 22px;
+  padding: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   color: var(--color-font-light);
