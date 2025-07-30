@@ -52,11 +52,11 @@ const router = createHashRouter([
           },
           {
             path: 'about-school',
-            element: 'ABOUT SCHOOL PAGE'
+            element: <AboutSchool />
           },
           {
             path: 'our-team',
-            element: 'OUR TEAM PAGE'
+            element: <OurTeam />
           }
         ]
       },
@@ -76,7 +76,7 @@ const router = createHashRouter([
           },
           {
             path: 'contact-us',
-            element: 'CONTACT US PAGE'
+            element: <ContactUs />
           },
           {
             path: 'send-message',
@@ -84,7 +84,7 @@ const router = createHashRouter([
           },
           {
             path: 'find-us',
-            element: 'FIND US PAGE'
+            element: <FindUs />
           }
         ]
       }
