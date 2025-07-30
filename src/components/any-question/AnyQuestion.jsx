@@ -1,5 +1,5 @@
 
-
+import { Link } from 'react-router-dom'
 import styles from './AnyQuestion.module.css'
 
 const AnyQuestion = ({ currentLanguageData }) => {
@@ -9,7 +9,7 @@ const AnyQuestion = ({ currentLanguageData }) => {
     <div className={styles.container}>
       <div className={styles.content}>
         <p>{d.anyQuestionText}</p>
-        <button className='button button-gray'>{d.button.contact}</button>
+        <Link to='/contact/send-message' className='button button-gray'>{d.button.contact}</Link>
       </div>
     </div>
   )
