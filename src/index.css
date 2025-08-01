@@ -64,7 +64,7 @@ button {
 
 .button {
   width: var(--size-button-width);
-  height: var(--size-button-height);
+  padding: 1rem;
   color: #fff;
   border-radius: 5px;
   border: none;
