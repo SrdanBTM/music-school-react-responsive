@@ -119,9 +119,10 @@ const data = {
           errorTooShort: 'Your input is too short. Please enter more characters.',
           errorTypeMismatch: 'Please enter a valid value (e.g., a valid email address).',
           errorBadInput: 'Invalid input. Please enter a correct value.',
-          errorAnother: 'Please correct the highlighted inputs and try again.',
+          errorAnother: 'Please correct the inputs and try again.',
           loading: 'Sending...',
           success: 'Message Sent!',
+          notSent: 'There was a problem sending your message. Please try again.'
       },
 
       footer: {
@@ -489,7 +490,8 @@ const data = {
           errorBadInput: 'Ungültige Eingabe. Bitte geben Sie einen korrekten Wert ein.',
           errorAnother: 'Bitte korrigieren Sie die markierten Eingaben und versuchen Sie es erneut.',
           loading: 'Wird gesendet...',
-          success: 'Nachricht gesendet!'
+          success: 'Nachricht gesendet!',
+          notSent: 'Beim Senden der Nachricht ist ein Problem aufgetreten. Bitte versuche es erneut.'
       },
 
       footer: {
