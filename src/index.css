@@ -29,7 +29,6 @@ button {
   --color-gold-3: #f2b55f;
   --color-gold-4: #f9a632;
   --color-gold-5: #f8ddb8;
-  --color-button-error: rgb(160, 61, 61);
 
   /* SIZE */
   --size-header-height: 9rem;
@@ -112,5 +111,13 @@ button {
 }
 
 .button-error {
-  background-color: var(--color-button-error);
+  background-color: rgb(160, 61, 61);
+}
+
+.button-loading {
+  background-color: rgb(155, 160, 61);
+}
+
+.button-success {
+  background-color: rgb(92, 160, 61);
 }
