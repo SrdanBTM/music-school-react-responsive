@@ -6,7 +6,8 @@
 .container input,
 .container textarea {
   width: 100%;
-  border: 1px solid #aaa;
+  border: none;
+  border-bottom: 4px solid transparent;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: calc(var(--size-footer-text)*1.2);
@@ -17,7 +18,8 @@
 
 .container input:focus,
 .container textarea:focus {
-  outline: 1px solid #aaa;
+  outline: none;
+  border-bottom: 4px solid #aaa;
 }
 
 .container button {
