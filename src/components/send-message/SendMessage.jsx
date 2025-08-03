@@ -60,9 +60,6 @@ const SendMessage = () => {
     setButtonTitle(d.button.loading)
     setButtonColor('button-loading')
 
-    console.log(formData);
-    
-
     emailjs.send(
       serviceId,
       templateId,
