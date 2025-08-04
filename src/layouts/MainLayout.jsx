@@ -1,5 +1,5 @@
 
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import styles from './MainLayout.module.css'
 
@@ -18,9 +18,7 @@ const MainLayout = () => {
 
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
 
-  const [isHomePage, setIsHomePage] = useState(true)
-
-
+  const locationPathname = useLocation().pathname
 
   let currentLanguageData = data[languages.language1]
   let optionalLanguageData = data[languages.language2]
@@ -32,7 +30,6 @@ const MainLayout = () => {
         currentLanguageData={currentLanguageData}
         isMobileMenuOpened={isMobileMenuOpened}
         setIsMobileMenuOpened={setIsMobileMenuOpened}
-        isHomePage={isHomePage}
       />
 
       <MobileMenu
@@ -43,15 +40,14 @@ const MainLayout = () => {
         setIsMobileMenuOpened={setIsMobileMenuOpened}
       />
 
-      <div className={!isHomePage ? styles.outletContainer : ''}>
+      <div className={locationPathname !== '/' ? styles.outletContainer : ''}>
         <Outlet
-          context={{ currentLanguageData, isHomePage, setIsHomePage }}
+          context={{ currentLanguageData }}
         />
       </div>
 
       <Footer
         currentLanguageData={currentLanguageData}
-        isHomePage={isHomePage}
       />
 
     </div>

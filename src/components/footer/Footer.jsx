@@ -2,9 +2,12 @@
 import AnyQuestion from '../any-question/AnyQuestion.jsx'
 import FollowUs from '../follow-us/FollowUs.jsx'
 import styles from './Footer.module.css'
+import { useLocation } from 'react-router-dom'
 
-const Footer = ({ currentLanguageData, isHomePage }) => {
+const Footer = ({ currentLanguageData }) => {
   const d = currentLanguageData
+
+  const locationPathname = useLocation().pathname
 
   const BASE_URL = import.meta.env.BASE_URL
 
@@ -16,10 +19,10 @@ const Footer = ({ currentLanguageData, isHomePage }) => {
       className={styles.container}
       style={{
         backgroundImage: `url(${BASE_URL}images/background/bg2.jpg)`,
-        ...(isHomePage && { paddingTop: `12rem` })
+        ...(locationPathname === '/' && { paddingTop: `12rem` })
       }}>
 
-      {isHomePage && <AnyQuestion currentLanguageData={currentLanguageData} />}
+      {locationPathname === '/' && <AnyQuestion currentLanguageData={currentLanguageData} />}
 
       <div className={styles.top}>
         <div className={styles.contact}>

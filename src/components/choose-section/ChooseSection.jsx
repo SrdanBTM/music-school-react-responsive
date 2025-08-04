@@ -1,5 +1,5 @@
 
-import { useOutletContext, Link } from 'react-router-dom'
+import { useOutletContext } from 'react-router-dom'
 import styles from './ChooseSection.module.css'
 import Wraper from '../wraper/Wraper.jsx'
 import ChooseSectionLink from '../choose-section-link/ChooseSectionLink.jsx'

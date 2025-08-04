@@ -1,11 +1,13 @@
 
 
 import styles from './RotatingSentences.module.css'
-import { useOutletContext } from 'react-router-dom'
+import { useOutletContext, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 const RotatingSentences = () => {
-  const { currentLanguageData, isHomePage } = useOutletContext()
+  const { currentLanguageData } = useOutletContext()
+
+  const locationPathname = useLocation().pathname
 
   const allSentences = currentLanguageData.rotatingSentences
 
@@ -44,7 +46,7 @@ const RotatingSentences = () => {
       className={styles.container}
       style={{
         backgroundImage: `url(${import.meta.env.BASE_URL}images/background/bg8.jpg)`,
-        ...(isHomePage && { marginBottom: '12rem' })
+        ...(locationPathname === '/' && { marginBottom: '12rem' })
       }}>
       <div className={styles.content}>
         <p className={styles[classPosition]}>{allSentences[sentenceIndex]}</p>
