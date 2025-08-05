@@ -16,13 +16,22 @@ const OurTeam = () => {
   const instructorKeysObject = Object.fromEntries(instructorKeysArray)
   const [showInfoState, setShowInfoState] = useState(instructorKeysObject)
 
-  const handleClick = (key)=> {
+  const handleClick = (e, key) => {
+
     setShowInfoState(prev => {
       return {
         ...prev,
         [key]: !prev[key]
       }
     })
+
+
+    const clickedElementTopPositionPage = e.currentTarget.getBoundingClientRect().top + window.scrollY
+    scrollTo({
+      top: clickedElementTopPositionPage - 300,
+      behavior: 'smooth'
+    })
+
   }
 
 
@@ -31,7 +40,7 @@ const OurTeam = () => {
       <div className={styles.container}>
         {instructorKeys.map(key => {
           return (
-            <div onClick={()=>handleClick(key)} key={key} className={styles.instructor}>
+            <div onClick={(e) => handleClick(e, key)} key={key} className={styles.instructor}>
               <div className={styles.imageAndTitle}>
                 <img className={showInfoState[key] ? styles.bigImage : styles.smallImage}
                   src={`${import.meta.env.BASE_URL}${d.ourTeam[key].img}`}

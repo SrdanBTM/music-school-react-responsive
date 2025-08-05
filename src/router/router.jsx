@@ -94,3 +94,8 @@ const router = createHashRouter([
 )
 
 export default router
+
+
+// DODATNO:
+// mozda izbaciti sve layoute osim MainLayout, da svi elementi budu schildren od MainLayout
+// takodje mozda obrisati HomePage

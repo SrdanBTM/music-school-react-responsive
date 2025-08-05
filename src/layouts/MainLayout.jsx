@@ -1,6 +1,6 @@
 
-import { Outlet, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { Outlet, useLocation, useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import styles from './MainLayout.module.css'
 
 import Header from '../components/header/Header.jsx'
@@ -16,9 +16,21 @@ const MainLayout = () => {
     language2: 'de'
   })
 
+
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
 
+
   const locationPathname = useLocation().pathname
+  const { id } = useParams()
+  
+
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: id ? 'smooth' : 'auto'
+    })
+  },[locationPathname])
+
 
   let currentLanguageData = data[languages.language1]
   let optionalLanguageData = data[languages.language2]
