@@ -28,7 +28,7 @@ const OurTeam = () => {
 
     const clickedElementTopPositionPage = e.currentTarget.getBoundingClientRect().top + window.scrollY
     scrollTo({
-      top: clickedElementTopPositionPage - 300,
+      top: clickedElementTopPositionPage - 165,
       behavior: 'smooth'
     })
 
