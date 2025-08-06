@@ -19,11 +19,6 @@
   margin-bottom: 0;
 }
 
-
-.container a:hover {
-  transform: scale(1.05);
-}
-
 .container img {
   width: var(--size-contact-details-icon);
 }
@@ -32,4 +27,12 @@
   font-size: var(--size-footer-text);
   color: var(--color-font-dark);
   margin-top: 0.5rem;
+}
+
+
+
+@media (hover:hover) and (pointer:fine) {
+  .container a:hover {
+    transform: scale(1.05);
+  }
 }

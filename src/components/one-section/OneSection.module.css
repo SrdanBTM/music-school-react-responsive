@@ -1,5 +1,3 @@
-
-
 .oneSectionContainer h4 {
   margin-bottom: 0.5rem;
   font-size: var(--size-one-section-title);
@@ -30,10 +28,6 @@
   align-items: center;
 }
 
-.section:hover {
-  transform: scale(1.10);
-}
-
 .section img {
   width: calc(var(--size-section-image-width) * 0.8);
   height: calc(var(--size-section-image-height) * 0.8);
@@ -46,4 +40,12 @@
   margin-left: 2rem;
   font-size: var(--size-h4-title-1);
   color: var(--color-gold-1);
+}
+
+
+
+@media (hover:hover) and (pointer:fine) {
+  .section:hover {
+    transform: scale(1.10);
+  }
 }

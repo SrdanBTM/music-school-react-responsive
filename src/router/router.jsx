@@ -99,3 +99,10 @@ export default router
 // DODATNO:
 // mozda izbaciti sve layoute osim MainLayout, da svi elementi budu schildren od MainLayout
 // takodje mozda obrisati HomePage
+
+
+// RIJESITI:
+// selektovanje elemenata kada se klikne na telefonu
+// isljuciti transform:scale kada je mobilni rezim
+
+

@@ -17,10 +17,6 @@
   text-decoration: none;
 }
 
-.section:hover {
-  transform: scale(1.10);
-}
-
 .section img {
   width: var(--size-section-image-width);
   height: var(--size-section-image-height);
@@ -32,4 +28,12 @@
 .section h4 {
   font-size: var(--size-h4-title-1);
   color: var(--color-gold-1);
+}
+
+
+
+@media (hover:hover) and (pointer:fine) {
+  .section:hover {
+    transform: scale(1.10);
+  }
 }

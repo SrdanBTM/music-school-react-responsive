@@ -16,6 +16,10 @@
   transition: transform 0.2s ease;
 }
 
-.container img:hover {
-  transform: scale(1.1);
+
+
+@media (hover:hover) and (pointer:fine) {
+  .container img:hover {
+    transform: scale(1.1);
+  }
 }
