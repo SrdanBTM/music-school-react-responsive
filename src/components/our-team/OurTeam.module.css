@@ -4,6 +4,7 @@
   row-gap: 2rem;
   grid-template-columns: 1fr;
   user-select: none;
+  --webkit-tap-highlight-color: transparent;
 }
 
 .instructor {
@@ -16,6 +17,7 @@
   justify-content: space-around;
   transition: transform 0.3s ease;
   cursor: pointer;
+  --webkit-tap-highlight-color: transparent;
 }
 
 .imageAndTitle {
