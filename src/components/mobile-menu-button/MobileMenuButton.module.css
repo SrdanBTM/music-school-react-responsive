@@ -10,6 +10,7 @@
   background-color: #000;
   cursor: pointer;
   position: relative;
+  user-select: none;
 }
 
 .image {

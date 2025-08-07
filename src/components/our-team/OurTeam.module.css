@@ -3,6 +3,7 @@
   display: grid;
   row-gap: 2rem;
   grid-template-columns: 1fr;
+  user-select: none;
 }
 
 .instructor {
@@ -47,10 +48,12 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: calc(var(--size-h4-title-2) * 0.8);
+  user-select: text;
 }
 
 .info p {
   font-size: var(--size-footer-text);
+  user-select: text;
 }
 
 .showInfo {

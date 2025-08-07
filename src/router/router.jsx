@@ -103,6 +103,8 @@ export default router
 
 // RIJESITI:
 // selektovanje elemenata kada se klikne na telefonu
-// isljuciti transform:scale kada je mobilni rezim
 
 
+// ZAVRSIO:
+// mislim da sam dodao user-select svuda gdje je trebalo
+// napraviti commit i ostalo pa provjeriti na telefonu ima li selektovanja elemenata
