@@ -9,7 +9,7 @@ const AnyQuestion = ({ currentLanguageData }) => {
     <div className={styles.container}>
       <div className={styles.content}>
         <p>{d.anyQuestionText}</p>
-        <Link to='/contact/send-message' className='button button-gray'>{d.button.contact}</Link>
+        <Link to='/send-message' className='button button-gray'>{d.button.contact}</Link>
       </div>
     </div>
   )

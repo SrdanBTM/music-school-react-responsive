@@ -39,35 +39,35 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
           <li>
             <NavLink
               onClick={handleNavLinkClick}
-              to='/about-us/about-school'>{d.nav.aboutUs.aboutTheSchool.title}
+              to='/about-school'>{d.nav.aboutUs.aboutTheSchool.title}
             </NavLink>
           </li>
 
           <li>
             <NavLink
               onClick={handleNavLinkClick}
-              to='/about-us/our-team'>{d.nav.aboutUs.ourTeam.title}
+              to='/our-team'>{d.nav.aboutUs.ourTeam.title}
             </NavLink>
           </li>
 
           <li>
             <NavLink
               onClick={handleNavLinkClick}
-              to='/contact/contact-us'>{d.nav.contact.contactDetails.title}
+              to='/contact-us'>{d.nav.contact.contactDetails.title}
             </NavLink>
           </li>
 
           <li>
             <NavLink
               onClick={handleNavLinkClick}
-              to='/contact/send-message'>{d.nav.contact.sendMessage.title}
+              to='/send-message'>{d.nav.contact.sendMessage.title}
             </NavLink>
           </li>
 
           <li>
             <NavLink
               onClick={handleNavLinkClick}
-              to='/contact/find-us'>{d.nav.contact.findUs.title}
+              to='/find-us'>{d.nav.contact.findUs.title}
             </NavLink>
           </li>
         </ul>
