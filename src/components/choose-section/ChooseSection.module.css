@@ -5,7 +5,6 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4rem;
   column-gap: 3rem;
-  user-select: none;
 }
 
 .section {

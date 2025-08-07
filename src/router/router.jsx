@@ -105,6 +105,3 @@ export default router
 // selektovanje elemenata kada se klikne na telefonu
 
 
-// ZAVRSIO:
-// mislim da sam dodao user-select svuda gdje je trebalo
-// napraviti commit i ostalo pa provjeriti na telefonu ima li selektovanja elemenata
