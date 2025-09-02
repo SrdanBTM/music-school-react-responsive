@@ -22,8 +22,10 @@ const Header = ({ currentLanguageData, isMobileMenuOpened, setIsMobileMenuOpened
 
   return (
     <div
-      className={`${styles.container} ${locationPathname !== '/' && styles.cover} ${isScrolled ? styles.coverBlack : styles.coverTransparent}`}
-      style={{backgroundImage: locationPathname !== '/'  ? `url(${import.meta.env.BASE_URL}images/background/bg1.jpg)` : ''}}>
+      className={`
+      ${styles.container} 
+      ${locationPathname !== '/' && styles.cover} 
+      ${isScrolled ? styles.coverBlack : styles.coverTransparent}`}>
       <Logo
         currentLanguageData={currentLanguageData} />
 

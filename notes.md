@@ -5,4 +5,4 @@ RIJESITI:
 
 
 URADIO:
-- kreirao granu cover-on-scroll
+- kreirao granu header-cover
