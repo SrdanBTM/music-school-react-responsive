@@ -25,6 +25,8 @@
 
 .content {
   margin-top: 7rem;
+  margin-left: var(--size-first-page-margin-side);
+  margin-right: var(--size-first-page-margin-side);
 }
 
 .content div h1 {
@@ -44,7 +46,7 @@
   color: var(--color-font-light);
   font-size: var(--size-first-page-text);
   margin: 4rem 0;
-  max-width: 25rem;
+  max-width: 40rem;
 }
 
 
