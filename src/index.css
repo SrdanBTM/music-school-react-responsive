@@ -45,13 +45,13 @@ button {
   --size-h4-title-1: 1rem;
   --size-h4-title-2: 1.3rem;
   --size-footer-text: 1rem;
-  --size-section-image-width: 6rem;
-  --size-section-image-height: 6rem;
+  --size-section-image-width: 6.5rem;
+  --size-section-image-height: 6.5rem;
   --size-footer-icon: 1rem;
   --size-social-icon: 3.5rem;
   --size-footer-width: 16rem;
   --size-any-question-height: 15rem;
-  --size-rotating-sentences-text: 2.1rem;
+  --size-rotating-sentences-text: 2.5rem;
   --size-one-section-title: 1.15rem;
   --size-one-section-text: 1rem;
   --size-instructor-photo: 4rem;
@@ -130,12 +130,18 @@ button {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   :root {
     --size-instructor-padding: 2rem;
     --size-component-width: 40rem;
     --size-header-mobile-padding-side: 2.5rem;
     --size-first-page-margin-side: 3rem;
     --size-any-question-margin-side: 0rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  :root {
+    --size-first-page-margin-side: 10rem;
   }
 }
