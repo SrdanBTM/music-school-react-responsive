@@ -1,6 +1,7 @@
 
 
 .container {
+  width: var(--size-component-width);
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 4rem;
@@ -41,10 +42,6 @@
 @media (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  :root {
-    --size-first-page-margin-side: 3rem;
   }
 }
 

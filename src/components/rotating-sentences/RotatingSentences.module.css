@@ -11,7 +11,7 @@
 }
 
 .content {
-  width: 45rem;
+  width: var(--size-component-width);
   height: 100%;
   display: flex;
   justify-content: center;

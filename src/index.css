@@ -59,6 +59,8 @@ button {
   --size-first-page-margin-side: 1rem;
   --size-instructor-padding: 1rem;
   --size-component-width: 100%;
+  --size-header-mobile-padding-side: 1.5rem;
+  --size-any-question-margin-side: 5rem;
 
 
   /* BORDER */
@@ -124,4 +126,16 @@ button {
 
 .button-success {
   background-color: rgb(92, 160, 61);
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --size-instructor-padding: 2rem;
+    --size-component-width: 40rem;
+    --size-header-mobile-padding-side: 2.5rem;
+    --size-first-page-margin-side: 3rem;
+    --size-any-question-margin-side: 0rem;
+  }
 }

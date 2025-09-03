@@ -1,14 +1,14 @@
 .container {
-  width: 100%;
+  width: var(--size-component-width);
   display: grid;
-  row-gap: 2rem;
+  gap: 2rem;
   grid-template-columns: 1fr;
 }
 
 .instructor {
   border: 1px solid #fff;
   box-shadow: 0 0 8px #ccc;
-  padding: 1rem;
+  padding: var(--size-instructor-padding);
   background-color: transparent;
   display: flex;
   flex-direction: column;

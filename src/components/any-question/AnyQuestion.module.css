@@ -1,7 +1,7 @@
 
 
 .container {
-  width: 100%;
+  width: var(--size-component-with);
   height: var(--size-any-question-height);
   position: absolute;
   top: calc(var(--size-any-question-height)/2 * -1);
@@ -13,13 +13,15 @@
 .content {
   border-radius: 5px;
   background-color: var(--color-gold-2);
-  width: 80%;
+  width: 100%;
   height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 1.5rem 2rem;
+  margin-left: var(--size-any-question-margin-side);
+  margin-right: var(--size-any-question-margin-side);
 }
 
 .content p {

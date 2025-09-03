@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding:  1.5rem var(--size-header-mobile-padding-side);
   position: fixed;
   z-index: 1 ;
   background-position: top; 
