@@ -1,8 +1,8 @@
 
 
-import styles from './LanguageButtonHeader.module.css'
+import styles from './LanguageButtonDesktop.module.css'
 
-const LanguageButtonHeader = ({ currentLanguageData, optionalLanguageData, setLanguages }) => {
+const LanguageButtonDesktop = ({ currentLanguageData, optionalLanguageData, setLanguages }) => {
 
   const en = { language1: 'en', language2: 'de' }
   const de = { language1: 'de', language2: 'en' }
@@ -23,4 +23,4 @@ const LanguageButtonHeader = ({ currentLanguageData, optionalLanguageData, setLa
   )
 }
 
-export default LanguageButtonHeader
+export default LanguageButtonDesktop

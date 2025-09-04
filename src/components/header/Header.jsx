@@ -4,7 +4,7 @@ import Logo from '../logo/Logo.jsx'
 import MobileMenuButton from '../mobile-menu-button/MobileMenuButton.jsx'
 import Navbar from '../navbar/Navbar.jsx'
 import FollowUs from '../follow-us/FollowUs.jsx'
-import LanguageButtonHeader from '../language-button-header/LanguageButtonHeader.jsx'
+import LanguageButtonDesktop from '../language-button-desktop/LanguageButtonDesktop.jsx'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
@@ -55,7 +55,7 @@ const Header = ({ currentLanguageData, optionalLanguageData, isMobileMenuOpened,
             />
             <div className={styles.socialAndLanguage}>
               <FollowUs />
-              <LanguageButtonHeader
+              <LanguageButtonDesktop
                 currentLanguageData={currentLanguageData}
                 optionalLanguageData={optionalLanguageData}
                 setLanguages={setLanguages}
