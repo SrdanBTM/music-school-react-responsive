@@ -2,7 +2,7 @@
 import styles from './Header.module.css'
 import Logo from '../logo/Logo.jsx'
 import MobileMenuButton from '../mobile-menu-button/MobileMenuButton.jsx'
-import Navbar from '../navbar/Navbar.jsx'
+import NavbarDesktop from '../navbar-desktop/NavbarDesktop.jsx'
 import FollowUs from '../follow-us/FollowUs.jsx'
 import LanguageButtonDesktop from '../language-button-desktop/LanguageButtonDesktop.jsx'
 import { useLocation } from 'react-router-dom'
@@ -63,7 +63,9 @@ const Header = ({ currentLanguageData, optionalLanguageData, isMobileMenuOpened,
             </div>
           </div>
 
-          <Navbar />
+          <NavbarDesktop
+            currentLanguageData={currentLanguageData}
+          />
         </div>
       }
 
