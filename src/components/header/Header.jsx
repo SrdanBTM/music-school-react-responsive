@@ -4,11 +4,12 @@ import Logo from '../logo/Logo.jsx'
 import MobileMenuButton from '../mobile-menu-button/MobileMenuButton.jsx'
 import Navbar from '../navbar/Navbar.jsx'
 import FollowUs from '../follow-us/FollowUs.jsx'
+import LanguageButtonHeader from '../language-button-header/LanguageButtonHeader.jsx'
 import { useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-const Header = ({ currentLanguageData, isMobileMenuOpened, setIsMobileMenuOpened }) => {
+const Header = ({ currentLanguageData, optionalLanguageData, isMobileMenuOpened, setIsMobileMenuOpened, setLanguages }) => {
 
   const isMobile = useMediaQuery({ maxWidth: 1024 })
   const isSmallDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1280 })
@@ -50,13 +51,18 @@ const Header = ({ currentLanguageData, isMobileMenuOpened, setIsMobileMenuOpened
         <div className={styles.containerSmallDesktop}>
           <div className={styles.logoAndSocialAndLanguage}>
             <Logo
-              currentLanguageData={currentLanguageData} />
+              currentLanguageData={currentLanguageData}
+            />
             <div className={styles.socialAndLanguage}>
               <FollowUs />
-              <div>language button</div>
+              <LanguageButtonHeader
+                currentLanguageData={currentLanguageData}
+                optionalLanguageData={optionalLanguageData}
+                setLanguages={setLanguages}
+              />
             </div>
           </div>
-          
+
           <Navbar />
         </div>
       }

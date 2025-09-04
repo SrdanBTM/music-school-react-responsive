@@ -130,6 +130,31 @@ button {
 
 
 
+
+.navbar-buttons-main,
+.navbar-buttons-sub {
+  padding: 1rem;
+  border: none;
+  color: var(--color-font-light);
+}
+
+.navbar-buttons-main {
+  background-color: rgba(0,0,0,0);
+}
+
+.navbar-buttons-sub {
+  background-color: #555;
+}
+
+.navbar-buttons-main:hover,
+.navbar-buttons-sub:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
 @media (min-width: 768px) and (max-width: 1280px) {
   :root {
     --size-instructor-padding: 2rem;

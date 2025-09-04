@@ -1,0 +1,26 @@
+
+
+import styles from './LanguageButtonHeader.module.css'
+
+const LanguageButtonHeader = ({ currentLanguageData, optionalLanguageData, setLanguages }) => {
+
+  const en = { language1: 'en', language2: 'de' }
+  const de = { language1: 'de', language2: 'en' }
+
+  function handleButtonClick() {
+    setLanguages(prev => prev.language1 === 'en' ? de : en)
+  }
+
+  return (
+    <div className={styles.container}>
+      <button className='navbar-buttons-main'>
+        {currentLanguageData.nav.main.language}
+      </button>
+      <button onClick={handleButtonClick} className='navbar-buttons-sub'>
+        {optionalLanguageData.nav.main.language}
+      </button>
+    </div>
+  )
+}
+
+export default LanguageButtonHeader

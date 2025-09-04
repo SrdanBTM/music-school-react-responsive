@@ -40,8 +40,10 @@ const MainLayout = () => {
     <div>
       <Header
         currentLanguageData={currentLanguageData}
+        optionalLanguageData={optionalLanguageData}
         isMobileMenuOpened={isMobileMenuOpened}
         setIsMobileMenuOpened={setIsMobileMenuOpened}
+        setLanguages={setLanguages}
       />
 
       <MobileMenu
