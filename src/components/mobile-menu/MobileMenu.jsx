@@ -18,26 +18,16 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
     setIsMobileMenuOpened(false)
   }
 
-  const navlinkData = [
-    { to: '/', title: d.nav.main.home },
-    { to: '/sections', title: d.nav.main.sections },
-    { to: '/about-school', title: d.nav.aboutUs.aboutTheSchool.title },
-    { to: '/our-team', title: d.nav.aboutUs.ourTeam.title },
-    { to: '/contact-us', title: d.nav.contact.contactDetails.title },
-    { to: '/send-message', title: d.nav.contact.sendMessage.title },
-    { to: '/find-us', title: d.nav.contact.findUs.title }
-  ]
-
   return (
     <div className={`${styles.container} ${isMobileMenuOpened ? styles.show : styles.hide}`}>
       <nav>
         <ul>
-          {navlinkData.map(el => {
+          {d.mobileMenu.map(el => {
             return (
-              <li key={el.to}>
+              <li key={el.title}>
                 <NavLink
                   onClick={handleNavLinkClick}
-                  to={el.to}>{el.title}
+                  to={el.toPath}>{el.title}
                 </NavLink>
               </li>
             )
@@ -45,7 +35,7 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
         </ul>
       </nav>
 
-      <button onClick={handleButtonClick}>{optionalLanguageData.nav.main.language}</button>
+      <button onClick={handleButtonClick}>{optionalLanguageData.languageButtonTitle}</button>
     </div>
   )
 }

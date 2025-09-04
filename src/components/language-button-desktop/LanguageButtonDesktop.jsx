@@ -14,10 +14,10 @@ const LanguageButtonDesktop = ({ currentLanguageData, optionalLanguageData, setL
   return (
     <div className={styles.container}>
       <button className='navbar-buttons-main'>
-        {currentLanguageData.nav.main.language}
+        {currentLanguageData.languageButtonTitle}
       </button>
       <button onClick={handleButtonClick} className='navbar-buttons-sub'>
-        {optionalLanguageData.nav.main.language}
+        {optionalLanguageData.languageButtonTitle}
       </button>
     </div>
   )
