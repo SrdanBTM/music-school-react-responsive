@@ -18,58 +18,30 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
     setIsMobileMenuOpened(false)
   }
 
+  const navlinkData = [
+    { to: '/', title: d.nav.main.home },
+    { to: '/sections', title: d.nav.main.sections },
+    { to: '/about-school', title: d.nav.aboutUs.aboutTheSchool.title },
+    { to: '/our-team', title: d.nav.aboutUs.ourTeam.title },
+    { to: '/contact-us', title: d.nav.contact.contactDetails.title },
+    { to: '/send-message', title: d.nav.contact.sendMessage.title },
+    { to: '/find-us', title: d.nav.contact.findUs.title }
+  ]
+
   return (
     <div className={`${styles.container} ${isMobileMenuOpened ? styles.show : styles.hide}`}>
       <nav>
         <ul>
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/'>{d.nav.main.home}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/sections'>{d.nav.main.sections}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/about-school'>{d.nav.aboutUs.aboutTheSchool.title}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/our-team'>{d.nav.aboutUs.ourTeam.title}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/contact-us'>{d.nav.contact.contactDetails.title}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/send-message'>{d.nav.contact.sendMessage.title}
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              onClick={handleNavLinkClick}
-              to='/find-us'>{d.nav.contact.findUs.title}
-            </NavLink>
-          </li>
+          {navlinkData.map(el => {
+            return (
+              <li key={el.to}>
+                <NavLink
+                  onClick={handleNavLinkClick}
+                  to={el.to}>{el.title}
+                </NavLink>
+              </li>
+            )
+          })}
         </ul>
       </nav>
 
