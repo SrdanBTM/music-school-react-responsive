@@ -6,8 +6,8 @@
   background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding:  1.5rem var(--size-header-mobile-padding-side);
+  padding-left: var(--size-header-mobile-padding-side);
+  padding-right: var(--size-header-mobile-padding-side);
   position: fixed;
   z-index: 1 ;
   background-position: top; 
@@ -35,3 +35,29 @@
   background-color: rgba(0,0,0,1);
   transition: background-color 0.3s ease;
 }
+
+.containerMobile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.containerSmallDesktop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logoAndSocialAndLanguage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.socialAndLanguage {
+  display: flex;
+  align-items: center;
+}
+

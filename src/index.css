@@ -143,5 +143,6 @@ button {
 @media (min-width: 1025px) and (max-width: 1280px) {
   :root {
     --size-first-page-margin-side: 10rem;
+    --size-social-icon: 2.5rem;
   }
 }
