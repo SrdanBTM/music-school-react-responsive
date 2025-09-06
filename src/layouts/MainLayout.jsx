@@ -7,7 +7,7 @@ import Header from '../components/header/Header.jsx'
 import Footer from '../components/footer/Footer.jsx'
 import MobileMenu from '../components/mobile-menu/MobileMenu.jsx'
 
-import data from '../data/data1.js'
+import data from '../data/data.js'
 
 const MainLayout = () => {
 

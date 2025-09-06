@@ -14,6 +14,10 @@ URADIO:
   navbar =>
   update-data =>
   NavbarDesktop-continuation =>
+
+
+SLEDECE:
+- spojiti sve u main granu (mislim da treba samo zadnju NavbarDesktop-continuation granu spojiti u main granu)
   
 
 
