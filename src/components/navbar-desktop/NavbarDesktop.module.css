@@ -3,4 +3,87 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.1rem 0;
+}
+
+.mainNav {
+  width: auto;
+  display: flex;
+}
+
+.navlinkMain,
+.navlinkSub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.navlinkMain {
+  padding: 2rem 0;
+}
+
+.navlinkSub {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #888;
+  background-color: var(--color-bg-menu);
+  transition: background-color 0.1s ease;
+  text-align: center;
+}
+
+.navlinkSub:last-child {
+  border-bottom: none;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.navlinkMain > a,
+.navlinkSub > a {
+  text-decoration: none;
+  color: var(--color-font-light);
+}
+
+
+.navlinkMain {
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.1s ease;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+}
+
+.navlinkSubContainer {
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  top: 20rem;
+}
+
+.navlinkMain:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.navlinkSub:hover {
+  cursor: pointer;
+  background-color: #000;
+}
+
+.navlinkMain,
+.navlinkSub {
+  width: var(--size-navlink-width);
+  color: var(--color-font-light);
+}
+
+.showSubmenu {
+  opacity: 1;
+  transform: translateY(-8rem);
+  pointer-events: auto;
+  transition: opacity 0.5s ease, transform 0.2s ease;
+}
+
+.hideSubmenu {
+  opacity: 0;
+  transform: translateY(0);
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.2s ease;
 }

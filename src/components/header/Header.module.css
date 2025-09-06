@@ -5,7 +5,6 @@
   height: var(--size-header-height);
   background-color: rgba(0,0,0,0.5);
   display: flex;
-  align-items: center;
   padding-left: var(--size-header-mobile-padding-side);
   padding-right: var(--size-header-mobile-padding-side);
   position: fixed;
@@ -32,19 +31,21 @@
 }
 
 .coverBlack {
-  background-color: rgba(0,0,0,1);
+  background-color: var(--color-bg-header);
   transition: background-color 0.3s ease;
 }
 
 .containerMobile {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .containerSmallDesktop {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -53,8 +54,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 .socialAndLanguage {
   display: flex;

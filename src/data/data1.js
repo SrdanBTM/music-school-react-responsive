@@ -11,14 +11,14 @@ const data = {
       { toPath: "/find-us", title: "FIND US" },
     ],
     desktopNavbar: [
-      { toPath: "/", title: "HOME" },
+      { toPath: "/", title: "HOME", submenu: [] },
       { toPath: "/sections", title: "SECTIONS", submenu: [
-          "PIANO",
-          "GUITAR",
-          "VIOLIN",
-          "MUSIC THEORY",
-          "PERCUSSION",
-          "VOCAL TRAINING"
+          { title: "PIANO" },
+          { title: "GUITAR" },
+          { title: "VIOLIN" },
+          { title: "MUSIC THEORY" },
+          { title: "PERCUSSION" },
+          { title: "VOCAL TRAINING" }
         ]
       },
       { toPath: "/about-us", title: "ABOUT US", submenu: [
@@ -375,15 +375,9 @@ const data = {
         { toPath: "/send-message", title: "NACHRICHT SENDEN" },
         { toPath: "/find-us", title: "STANDORT" },
       ],
-      desktopNavbar: {
-        home: {
-          toPath: "/",
-          title: "STARTSEITE",
-        },
-        sections: {
-          toPath: "/sections",
-          title: "SEKTIONEN",
-          submenu: [
+      desktopNavbar: [
+        { toPath: "/", title: "STARTSEITE" },
+        { toPath: "/sections", title: "SEKTIONEN", submenu: [
             "KLAVIER",
             "GITARRE",
             "VIOLINE",
@@ -392,24 +386,18 @@ const data = {
             "GESANGSTRAINING"
           ]
         },
-        aboutUs: {
-          toPath: "/about-us",
-          title: "ÜBER UNS",
-          submenu: [
+        { toPath: "/about-us", title: "ÜBER UNS", submenu: [
             { toPath: "/about-school", title: 'ÜBER DIE SCHULE' },
             { toPath: "/our-team", title: 'UNSER TEAM' }
           ]
         },
-        contact: {
-          toPath: "/contact",
-          title: "KONTAKT",
-          submenu: [
+        { toPath: "/contact", title: "KONTAKT", submenu: [
             { toPath: "/contact-details", title: 'KONTAKTDATEN' },
             { toPath: "/send-message", title: 'NACHRICHT SENDEN' },
             { toPath: "/find-us", title: 'STANDORT' },
           ]
         }
-      },
+      ],
 
     homeHeading: "Musikschule",
 

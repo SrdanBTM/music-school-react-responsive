@@ -3,3 +3,41 @@
   display: flex;
   flex-direction: column;
 }
+
+.buttonCurrent,
+.buttonOptional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1.2rem;
+  width: 5rem;
+  color: var(--color-font-light);
+}
+
+.buttonCurrent:hover,
+.buttonOptional:hover {
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.buttonOptional:hover {
+  border: 1px solid #888;
+}
+
+.buttonCurrent {
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.1s ease;
+  border-radius: 1rem 1rem 0 0;
+  position:a relative;
+  padding: 2rem 0;
+}
+
+.buttonOptional {
+  background-color: var(--color-bg-menu);
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  top: 5rem;
+  padding: 1.5rem 0;
+}
+

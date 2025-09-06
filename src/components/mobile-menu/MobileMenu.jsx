@@ -27,7 +27,9 @@ const MobileMenu = ({ currentLanguageData, optionalLanguageData, setLanguages, i
               <li key={el.title}>
                 <NavLink
                   onClick={handleNavLinkClick}
-                  to={el.toPath}>{el.title}
+                  to={el.toPath}
+                >
+                  {el.title}
                 </NavLink>
               </li>
             )

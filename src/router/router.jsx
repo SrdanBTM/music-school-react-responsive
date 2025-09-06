@@ -51,6 +51,15 @@ const router = createHashRouter([
         element: <OurTeam />
       },
       {
+        path: 'contact',
+        element:
+          <>
+            <ContactUs />
+            <SendMessage />
+            <FindUs />
+          </>
+      },
+      {
         path: 'contact-us',
         element: <ContactUs />
       },

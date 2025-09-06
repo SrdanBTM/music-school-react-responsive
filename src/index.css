@@ -22,6 +22,7 @@ button {
   --color-bg: #e6e1d3;
   --color-bg-menu: #333;
   --color-bg-menu-hover: #000;
+  --color-bg-header: #1a1a1a;
   --color-font-light: #ddd;
   --color-font-dark: #222;
   --color-gold-1: #b8761a; 
@@ -32,7 +33,7 @@ button {
   --color-gold-5: #f8ddb8;
 
   /* SIZE */
-  --size-header-height: 9rem;
+  --size-header-height: 12rem;
   --size-header-title: 1.1rem;
   --size-header-logo-img: 3.5rem;
   --size-mobile-menu-text: 1.1rem;
@@ -61,6 +62,7 @@ button {
   --size-component-width: 100%;
   --size-header-mobile-padding-side: 1.5rem;
   --size-any-question-margin-side: 5rem;
+  --size-navlink-width: 10rem;
 
 
   /* BORDER */
@@ -128,29 +130,6 @@ button {
   background-color: rgb(92, 160, 61);
 }
 
-
-
-
-.navbar-buttons-main,
-.navbar-buttons-sub {
-  padding: 1rem;
-  border: none;
-  color: var(--color-font-light);
-}
-
-.navbar-buttons-main {
-  background-color: rgba(0,0,0,0);
-}
-
-.navbar-buttons-sub {
-  background-color: #555;
-}
-
-.navbar-buttons-main:hover,
-.navbar-buttons-sub:hover {
-  cursor: pointer;
-  background-color: rgba(0,0,0,0.8);
-}
 
 
 
