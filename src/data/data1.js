@@ -376,14 +376,14 @@ const data = {
         { toPath: "/find-us", title: "STANDORT" },
       ],
       desktopNavbar: [
-        { toPath: "/", title: "STARTSEITE" },
+        { toPath: "/", title: "STARTSEITE", submenu: [] },
         { toPath: "/sections", title: "SEKTIONEN", submenu: [
-            "KLAVIER",
-            "GITARRE",
-            "VIOLINE",
-            "MUSIKTHEORIE",
-            "SCHLAGZEUG",
-            "GESANGSTRAINING"
+            { title: "KLAVIER" },
+            { title: "GITARRE" },
+            { title: "VIOLINE" },
+            { title: "MUSIKTHEORIE" },
+            { title: "SCHLAGZEUG" },
+            { title: "GESANGSTRAINING" }
           ]
         },
         { toPath: "/about-us", title: "ÜBER UNS", submenu: [
