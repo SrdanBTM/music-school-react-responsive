@@ -15,9 +15,6 @@
   transition: transform 0.3s ease;
 }
 
-.container a:last-child {
-  margin-bottom: 0;
-}
 
 .container img {
   width: var(--size-contact-details-icon);
@@ -34,5 +31,11 @@
 @media (hover:hover) and (pointer:fine) {
   .container a:hover {
     transform: scale(1.05);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    flex-direction: row;
   }
 }
