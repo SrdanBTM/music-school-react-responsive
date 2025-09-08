@@ -4,8 +4,6 @@ RIJESITI:
 
 
 URADIO:
-- napravio granu:
-  footer-update
-  
+
 
 
