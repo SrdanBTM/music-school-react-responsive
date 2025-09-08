@@ -148,13 +148,13 @@ button {
 @media (min-width: 1025px) {
   :root {
     --size-social-icon: 2.5rem;
+    --size-footer-width: 45rem;
   }
 }
 
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   :root {
-    --size-footer-width: 45rem;
     --size-first-page-margin-side: 10rem;
   }
 }
