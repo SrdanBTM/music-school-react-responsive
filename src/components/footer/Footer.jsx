@@ -3,6 +3,7 @@ import AnyQuestion from '../any-question/AnyQuestion.jsx'
 import FollowUs from '../follow-us/FollowUs.jsx'
 import styles from './Footer.module.css'
 import { useLocation } from 'react-router-dom'
+import { useMediaQuery } from 'react-responsive'
 
 const Footer = ({ currentLanguageData }) => {
   const d = currentLanguageData
@@ -13,6 +14,9 @@ const Footer = ({ currentLanguageData }) => {
 
   const contactKeys = Object.keys(d.footer.contact)
   const operatingKeys = Object.keys(d.footer.operatingHours)
+
+  const isMobile = useMediaQuery({ maxWidth: 1024 })
+  const isSmallDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1280 })
 
   return (
     <div
@@ -53,10 +57,12 @@ const Footer = ({ currentLanguageData }) => {
           </div>
         </div>
 
-        <div className={styles.follow}>
-          <h4>{d.titles.followUs}</h4>
-          <FollowUs />
-        </div>
+        {isMobile &&
+          <div className={styles.follow}>
+            <h4>{d.titles.followUs}</h4>
+            <FollowUs />
+          </div>
+        }
       </div>
 
       <div className={styles.bottom}>
