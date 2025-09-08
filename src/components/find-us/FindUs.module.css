@@ -1,6 +1,6 @@
 
 .container {
-  width: var(--size-component-width);
+  width: calc(var(--size-component-width) * 0.85);
   height: 35rem;
 }
 

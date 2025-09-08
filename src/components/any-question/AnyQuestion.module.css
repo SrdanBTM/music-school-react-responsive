@@ -20,8 +20,7 @@
   align-items: center;
   justify-content: space-around;
   padding: 1.5rem 2rem;
-  margin-left: var(--size-any-question-margin-side);
-  margin-right: var(--size-any-question-margin-side);
+
 }
 
 .content p {

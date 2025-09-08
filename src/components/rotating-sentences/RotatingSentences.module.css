@@ -26,7 +26,7 @@
 }
 
 .startPosition {
-  transform: translateX(600px);
+  transform: translateX(800px);
   transition: none;
 }
 
@@ -36,6 +36,6 @@
 }
 
 .endPosition {
-  transform: translateX(-600px);
+  transform: translateX(-800px);
   transition: transform 1.2s ease-in;
 }

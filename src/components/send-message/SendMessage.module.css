@@ -29,3 +29,8 @@
   margin-top: 1rem;
 }
 
+@media (min-width: 1280px) {
+  .container {
+    width: calc(var(--size-component-width) * 0.7);
+  }
+}

@@ -131,6 +131,11 @@ button {
 }
 
 
+@media (max-width: 767px) {
+  :root {
+    --size-component-width: 25rem;
+  }
+}
 
 
 @media (min-width: 768px) {
