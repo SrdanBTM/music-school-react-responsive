@@ -133,15 +133,21 @@ button {
 
 
 
+@media (min-width: 768px) {
+  :root {
+    --size-instructor-photo: 6rem;
+    --size-instructor-padding: 2rem;
+    --size-component-width: 40rem;
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 1280px) {
   :root {
-    --size-instructor-padding: 2rem;
-    --size-component-width: 40rem;
     --size-header-mobile-padding-side: 2.5rem;
     --size-first-page-margin-side: 3rem;
     --size-any-question-margin-side: 0rem;
-    --size-instructor-photo: 6rem;
+  
   }
 }
 
@@ -149,19 +155,15 @@ button {
   :root {
     --size-social-icon: 2.5rem;
     --size-footer-width: 45rem;
-  }
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  :root {
     --size-first-page-margin-side: 10rem;
   }
 }
 
+
+
 @media (min-width: 1281px) {
   :root {
-    --size-first-page-margin-side: 20rem;
     --size-component-width: 70rem;
+    --size-instructor-padding: 2rem;
   }
 }

@@ -84,7 +84,7 @@
 }
 
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 769px) {
   .title {
     align-items: start;
   }
@@ -98,6 +98,17 @@
   }
 
   .imageAndTitle img {
-    margin-right: 5rem;;
+    margin-right: 5rem;
+  }
+}
+
+
+@media (min-width: 1281px) {
+  .imageAndTitle {
+    justify-content: start;
+  }
+
+  .info p {
+    margin-top: 2rem;
   }
 }
