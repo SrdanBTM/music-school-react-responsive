@@ -1,7 +1,7 @@
 
 
 .container {
-  width: var(--size-component-with);
+  width: var(--size-component-width);
   height: var(--size-any-question-height);
   position: absolute;
   top: calc(var(--size-any-question-height)/2 * -1);
@@ -28,4 +28,10 @@
   color: var(--color-bg-menu);
   font-size: var(--size-first-page-text);
   text-align: center;
+}
+
+@media (min-width: 1281px) {
+  .content {
+    flex-direction: row;
+  }
 }
