@@ -12,7 +12,7 @@ import { useMediaQuery } from 'react-responsive'
 const Header = ({ currentLanguageData, optionalLanguageData, isMobileMenuOpened, setIsMobileMenuOpened, setLanguages }) => {
 
   const isMobile = useMediaQuery({ maxWidth: 1024 })
-  const isSmallDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1280 })
+  const isDesktop = useMediaQuery({ minWidth: 1025 })
 
 
   const [isScrolled, setIsScrolled] = useState(false)
@@ -47,7 +47,7 @@ const Header = ({ currentLanguageData, optionalLanguageData, isMobileMenuOpened,
         </div>
       }
 
-      {isSmallDesktop &&
+      {isDesktop &&
         <div className={styles.containerSmallDesktop}>
           <div className={styles.logoAndSocialAndLanguage}>
             <Logo
