@@ -1,9 +1,9 @@
 
 import Wraper from '../wraper/Wraper.jsx'
-import styles from './ContactUs.module.css'
+import styles from './ContactDetails.module.css'
 import { useOutletContext } from 'react-router-dom'
 
-const ContactUs = () => {
+const ContactDetails = () => {
 
   const { currentLanguageData } = useOutletContext()
   const d = currentLanguageData
@@ -30,4 +30,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default ContactDetails

@@ -6,7 +6,7 @@ import ChooseSection from '../components/choose-section/ChooseSection.jsx'
 import OneSection from '../components/one-section/OneSection.jsx'
 import AboutSchool from '../components/about-school/AboutSchool.jsx'
 import OurTeam from '../components/our-team/OurTeam.jsx'
-import ContactUs from '../components/contact-us/ContactUs.jsx'
+import ContactDetails from '../components/contact-details/ContactDetails.jsx'
 import SendMessage from '../components/send-message/SendMessage.jsx'
 import FindUs from '../components/find-us/FindUs.jsx'
 import FirstPage from '../components/first-page/FirstPage.jsx'
@@ -54,14 +54,14 @@ const router = createHashRouter([
         path: 'contact',
         element:
           <>
-            <ContactUs />
+            <ContactDetails />
             <SendMessage />
             <FindUs />
           </>
       },
       {
-        path: 'contact-us',
-        element: <ContactUs />
+        path: 'contact-details',
+        element: <ContactDetails />
       },
       {
         path: 'send-message',
