@@ -1,3 +1,8 @@
+
+.oneSectionContainer {
+  width: var(--size-component-width);
+}
+
 .oneSectionContainer h4 {
   margin-bottom: 0.5rem;
   font-size: var(--size-one-section-title);
