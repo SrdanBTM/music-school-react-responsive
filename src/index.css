@@ -141,6 +141,7 @@ button {
     --size-header-mobile-padding-side: 2.5rem;
     --size-first-page-margin-side: 3rem;
     --size-any-question-margin-side: 0rem;
+    --size-instructor-photo: 6rem;
   }
 }
 
@@ -151,3 +152,5 @@ button {
     --size-social-icon: 2.5rem;
   }
 }
+
+

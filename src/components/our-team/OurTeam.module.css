@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+.instructor:hover {
+  box-shadow: 0 0 8px #888;;
+  transition: box-shadow 0.3s ease;
+}
+
 .imageAndTitle {
   width: 100%;
   display: flex;
@@ -53,10 +58,11 @@
   font-size: var(--size-footer-text);
 }
 
+
 .showInfo {
   opacity: 1;
   max-height: 50rem;
-  transition: max-height 0.3s ease, opacity 0.5s ease 0.2s;
+  transition: max-height 0.5s ease, opacity 0.5s ease 0.2s;
   pointer-events: auto;
 }
 
@@ -78,9 +84,20 @@
 }
 
 
+@media (min-width: 769px) and (max-width: 1280px) {
+  .title {
+    align-items: start;
+  }
 
-@media (hover:hover) and (pointer:fine) {
-  .instructor:hover {
-    transform: scale(1.05);
+  .title h4:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .info p {
+    margin-top: 2rem;
+  }
+
+  .imageAndTitle img {
+    margin-right: 5rem;;
   }
 }
