@@ -37,8 +37,8 @@
   background-color: var(--color-bg-menu);
   border-radius: 1rem;
   position: absolute;
-  top: 13rem;
-  padding: 1.5rem 0;
+  top: 13.3rem;
+  padding: 2rem 0;
 }
 
 .showOptionalLanguage {

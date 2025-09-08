@@ -21,8 +21,11 @@
   list-style: none;
 }
 
-.navlinkMain {
+.navlinkMain > a,
+.navlinkSub > a {
+  width: 100%;
   padding: 2rem 0;
+  text-align: center;
 }
 
 .navlinkSub {
