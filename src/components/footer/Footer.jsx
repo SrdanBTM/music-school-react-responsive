@@ -16,7 +16,6 @@ const Footer = ({ currentLanguageData }) => {
   const operatingKeys = Object.keys(d.footer.operatingHours)
 
   const isMobile = useMediaQuery({ maxWidth: 1024 })
-  const isSmallDesktop = useMediaQuery({ minWidth: 1025, maxWidth: 1280 })
 
   return (
     <div

@@ -22,14 +22,14 @@ const MainLayout = () => {
 
   const locationPathname = useLocation().pathname
   const { id } = useParams()
-  
 
-  useEffect(()=>{
+
+  useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: id ? 'smooth' : 'auto'
     })
-  },[locationPathname])
+  }, [locationPathname])
 
 
   let currentLanguageData = data[languages.language1]
@@ -37,7 +37,9 @@ const MainLayout = () => {
 
 
   return (
-    <div>
+    <div
+      className={styles.mainLayout}
+    >
       <Header
         currentLanguageData={currentLanguageData}
         optionalLanguageData={optionalLanguageData}
