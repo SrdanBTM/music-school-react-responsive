@@ -28,13 +28,14 @@ const OurTeam = () => {
       }
     })
 
-
+    
     const clickedElementTopPositionPage = e.currentTarget.getBoundingClientRect().top + window.scrollY
-    scrollTo({
-      top: clickedElementTopPositionPage - 210,
-      behavior: 'smooth'
-    })
-
+    if (isMobile) {
+      scrollTo({
+        top: clickedElementTopPositionPage - 210,
+        behavior: 'smooth'
+      })
+    }
   }
 
 
