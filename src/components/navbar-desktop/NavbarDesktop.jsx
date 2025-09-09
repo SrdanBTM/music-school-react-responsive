@@ -32,7 +32,9 @@ const NavbarDesktop = ({ currentLanguageData }) => {
                 {element.submenu.map((item, index) => {
                   return (
                     <li key={index} className={styles.navlinkSub}>
-                      {item.title}
+                      <NavLink to={item.toPath}>
+                        {item.title}
+                      </NavLink>
                     </li>
                   )
                 })}

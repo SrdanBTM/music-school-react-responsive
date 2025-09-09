@@ -24,12 +24,20 @@
 .navlinkMain > a,
 .navlinkSub > a {
   width: 100%;
-  padding: 2rem 0;
   text-align: center;
+  text-decoration: none;
+  color: var(--color-font-light);
+}
+
+.navlinkMain > a {
+  padding: 2rem 0;
+}
+
+.navlinkSub > a {
+  padding: 1.5rem 1rem;
 }
 
 .navlinkSub {
-  padding: 1.5rem 1rem;
   border-bottom: 1px solid #888;
   background-color: var(--color-bg-menu);
   transition: background-color 0.1s ease;
@@ -40,13 +48,6 @@
   border-bottom: none;
   border-radius: 0 0 1rem 1rem;
 }
-
-.navlinkMain > a,
-.navlinkSub > a {
-  text-decoration: none;
-  color: var(--color-font-light);
-}
-
 
 .navlinkMain {
   background-color: rgba(0,0,0,0);

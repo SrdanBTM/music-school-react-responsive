@@ -13,12 +13,12 @@ const data = {
     desktopNavbar: [
       { toPath: "/", title: "HOME", submenu: [] },
       { toPath: "/sections", title: "SECTIONS", submenu: [
-          { title: "PIANO" },
-          { title: "GUITAR" },
-          { title: "VIOLIN" },
-          { title: "MUSIC THEORY" },
-          { title: "PERCUSSION" },
-          { title: "VOCAL TRAINING" }
+          { toPath: '/sections/piano', title: "PIANO" },
+          { toPath: '/sections/guitar', title: "GUITAR" },
+          { toPath: '/sections/violin', title: "VIOLIN" },
+          { toPath: '/sections/musicTheory', title: "MUSIC THEORY" },
+          { toPath: '/sections/percussion', title: "PERCUSSION" },
+          { toPath: '/sections/vocalTraining', title: "VOCAL TRAINING" }
         ]
       },
       { toPath: "/about-us", title: "ABOUT US", submenu: [
@@ -378,14 +378,14 @@ const data = {
       desktopNavbar: [
         { toPath: "/", title: "STARTSEITE", submenu: [] },
         { toPath: "/sections", title: "SEKTIONEN", submenu: [
-            { title: "KLAVIER" },
-            { title: "GITARRE" },
-            { title: "VIOLINE" },
-            { title: "MUSIKTHEORIE" },
-            { title: "SCHLAGZEUG" },
-            { title: "GESANGSTRAINING" }
-          ]
-        },
+          { toPath: '/sections/piano', title: "KLAVIER" },
+          { toPath: '/sections/guitar', title: "GITARRE" },
+          { toPath: '/sections/violin', title: "VIOLINE" },
+          { toPath: '/sections/musicTheory', title: "MUSIKTHEORIE" },
+          { toPath: '/sections/percussion', title: "SCHLAGZEUG" },
+          { toPath: '/sections/vocalTraining', title: "GESANGSTRAINING" }
+        ]
+      },
         { toPath: "/about-us", title: "ÜBER UNS", submenu: [
             { toPath: "/about-school", title: 'ÜBER DIE SCHULE' },
             { toPath: "/our-team", title: 'UNSER TEAM' }

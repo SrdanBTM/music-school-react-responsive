@@ -137,7 +137,6 @@ button {
   }
 }
 
-
 @media (min-width: 768px) {
   :root {
     --size-instructor-photo: 6rem;
