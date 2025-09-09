@@ -133,7 +133,7 @@ button {
 
 @media (max-width: 767px) {
   :root {
-    --size-component-width: 25rem;
+    --size-component-width: 20rem;
   }
 }
 
