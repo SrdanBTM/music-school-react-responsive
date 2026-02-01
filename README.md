@@ -5,6 +5,21 @@ Music School Website is a React-based responsive website for a fictional music s
 ## 🚀 Live Demo
 https://srdanbtm.github.io/music-school-react-responsive/
 
+## 📸 Screenshots
+### Home page
+![Home page](screenshots/home.png)
+
+### Choose section
+![Choose section](screenshots/choose-section.png)
+
+### Our Team
+![Our Team](screenshots/our-team.png)
+
+### Contact form
+![Contact form](screenshots/send-message.png)
+
+
+
 ## 🛠️ Tech Stack
 - React  
 - React Router (`createHashRouter`)  
