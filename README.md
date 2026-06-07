@@ -86,7 +86,7 @@ The `.env` file should not be committed to GitHub.
 Clone the repository:
 
 ```bash
-git clone https://github.com/SrdanBTM/music-school-website.git
+git clone https://github.com/srdan-cakalj/music-school-website.git
 cd music-school-website
 ```
 
