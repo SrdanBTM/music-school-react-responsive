@@ -6,7 +6,7 @@ The main focus of this project is building a polished multi-page landing website
 
 ## Live Demo
 
-https://srdanbtm.github.io/music-school-website/
+https://srdan-cakalj.github.io/music-school-website/
 
 > If the repository name is different, update the live demo URL and the `base` value in `vite.config.js`.
 
